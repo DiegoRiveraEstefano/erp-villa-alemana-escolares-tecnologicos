@@ -5,6 +5,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import AddressCreateForm
 from .forms import AddressUpdateForm
 from .models import Address
@@ -21,7 +23,7 @@ class AddressDetailView(DetailView):
 address_detail_view = AddressDetailView.as_view()
 
 
-class AddressListView(ListView):
+class AddressListView(ModelContextMixin, ListView):
     model = Address
     template_name = "address/address_list.html"
     context_object_name = "address"

@@ -1,15 +1,40 @@
-<header>
-    <h1>ERP Villa alemana Escolares Tecnologicos</h1>
+<header class="container">
     <nav>
-        <ul>
+        <!-- Logo y marca -->
+        <div class="">
+            <a href="{% url 'home' %}" class="logo">
+                <h1>
+                    <img src="/static/images/logo.png" height="50" width="50" alt="" />
+                    ERP Villa alemana
+                </h1>
+                <small>Gestion Empresarial</small>
+            </a>
+        </div>
+        <!-- Navegación principal -->
+        <ul class="nav-list">
             <li>
-                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'warehouses:warehouse-list' %}" class="active">Bodegas</a>
             </li>
             <li>
-                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'stores:store-list' %}" class="active">Tiendas</a>
             </li>
             <li>
-                <a href="{% url 'contact' %}">Contact</a>
+                <a href="{% url 'employees:employee-list' %}" class="active">Empleados</a>
+            </li>
+            <li>
+                <a href="{% url 'products:product-list' %}" class="active">Productos</a>
+            </li>
+            <li>
+                <a href="{% url 'customers:customer-list' %}" class="active">Clientes</a>
+            </li>
+            <li>
+                <a href="{% url 'sales:sale-list' %}" class="active">Ventas</a>
+            </li>
+            <li>
+                <a href="{% url 'address:address-list' %}" class="active">Direcciones</a>
+            </li>
+            <li>
+                <a href="{% url 'audits:list' %}" class="active">Logs</a>
             </li>
         </ul>
     </nav>

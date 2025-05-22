@@ -78,6 +78,13 @@ urlpatterns = [
             namespace="address",
         ),
     ),
+    path(
+        "logs/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.audits.urls",
+            namespace="audits",
+        ),
+    ),
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
 

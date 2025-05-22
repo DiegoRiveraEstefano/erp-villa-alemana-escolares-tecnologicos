@@ -28,3 +28,17 @@ class PaginatedFilteredListView(ListView):
         context = super().get_context_data(**kwargs)
         context["filter"] = self.filterset
         return context
+
+
+class ModelContextMixin:
+    """
+    Mixin to add a model context to the view.
+    """
+
+    model = None
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        if self.model:
+            context["model"] = self.model
+        return context

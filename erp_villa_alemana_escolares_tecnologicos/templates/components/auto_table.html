@@ -1,0 +1,60 @@
+{% load humanize %}
+{% load model_utils %}
+
+<table class="table {% if table_class %}{{ table_class }}{% endif %}">
+    <thead>
+        <tr>
+            {% for field in fields %}<th>{{ field.verbose_name|title }}</th>{% endfor %}
+            {% if detail_url_name or edit_url_name %}<th>Actions</th>{% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+            <tr>
+                {% for field in fields %}
+                    <td>
+                        {% with value=object|get_attribute:field.name %}
+                            {% if field.is_relation %}
+                                {{ value|default_if_none:"-" }}
+                            {% elif field.get_internal_type == 'DecimalField' %}
+                                {{ value|floatformat:2 }}
+                            {% elif field.get_internal_type == 'DateField' %}
+                                {{ value|date:"Y-m-d" }}
+                            {% elif field.get_internal_type == 'DateTimeField' %}
+                                {{ value|date:"Y-m-d H:i" }}
+                            {% elif field.get_internal_type == 'BooleanField' %}
+                                {{ value|yesno:"Yes,No" }}
+                            {% else %}
+                                {{ value|default:"-"|truncatechars:50 }}
+                            {% endif %}
+                        {% endwith %}
+                    </td>
+                {% endfor %}
+                {% if detail_url_name or edit_url_name %}
+                    <td>
+                        {% if detail_url_name %}
+                            {% if slug_field %}
+                                <a href="{% url detail_url_name object.slug %}">View</a>
+                            {% else %}
+                                <a href="{% url detail_url_name object.pk %}">View</a>
+                            {% endif %}
+                        {% endif %}
+                        {% if edit_url_name %}
+                            {% if slug_field %}
+                                <a href="{% url edit_url_name object.slug %}"
+                                   class="btn btn-sm btn-warning">Edit</a>
+                            {% else %}
+                                <a href="{% url edit_url_name object.pk %}"
+                                   class="btn btn-sm btn-warning">Edit</a>
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                {% endif %}
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="{{ fields|length|add:1 }}" class="text-center">No items found</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

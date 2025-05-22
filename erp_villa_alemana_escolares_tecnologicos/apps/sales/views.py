@@ -5,6 +5,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import SaleCreateForm
 from .forms import SaleUpdateForm
 from .models import Sale
@@ -21,7 +23,7 @@ class SaleDetailView(DetailView):
 sale_detail_view = SaleDetailView.as_view()
 
 
-class SaleListView(ListView):
+class SaleListView(ModelContextMixin, ListView):
     model = Sale
     template_name = "sales/sale_list.html"
     context_object_name = "sale"

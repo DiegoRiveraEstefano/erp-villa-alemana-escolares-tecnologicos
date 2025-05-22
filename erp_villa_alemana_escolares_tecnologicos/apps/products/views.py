@@ -5,6 +5,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import ProductCategoryCreateForm
 from .forms import ProductCategoryUpdateForm
 from .forms import ProductCreateForm
@@ -23,7 +25,7 @@ class ProductDetailView(DetailView):
 product_detail_view = ProductDetailView.as_view()
 
 
-class ProductListView(ListView):
+class ProductListView(ModelContextMixin, ListView):
     model = Product
     template_name = "products/product_list.html"
 
@@ -71,7 +73,7 @@ class ProductCategoryDetailView(DetailView):
 product_category_detail_view = ProductCategoryDetailView.as_view()
 
 
-class ProductCategoryListView(ListView):
+class ProductCategoryListView(ModelContextMixin, ListView):
     model = ProductCategory
     template_name = "products/category_list.html"
     context_object_name = "product_category"

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% load model_utils %}
+
+{% block title %}
+    Clientes
+{% endblock title %}
+{% block content %}
+    {% include "components/auto_table.html" with object_list=objects fields=model|get_model_fields %}
+{% endblock content %}

@@ -3,8 +3,10 @@ from django.core.paginator import Paginator
 from django.views.generic import DetailView
 from django.views.generic import ListView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
 
-class AuditListView(ListView):
+
+class AuditListView(ModelContextMixin, ListView):
     model = LogEntry
     template_name = "audits/audit_list.html"
     context_object_name = "audits"

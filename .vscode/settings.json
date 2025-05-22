@@ -2,6 +2,10 @@
     "[html][django-html]": {
         "editor.defaultFormatter": "monosans.djlint",
         "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
     },
     "[python]": {
         "editor.formatOnSave": true,

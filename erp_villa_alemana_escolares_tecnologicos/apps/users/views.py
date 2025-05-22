@@ -17,6 +17,7 @@ from django.views.generic import UpdateView
 
 from erp_villa_alemana_escolares_tecnologicos.apps.users.models import User
 from erp_villa_alemana_escolares_tecnologicos.apps.users.models import UserGroup
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
 
 from .forms import UserCreationForm
 from .forms import UserLoginForm
@@ -242,7 +243,7 @@ class UserGroupDetailView(DetailView):
 user_group_detail_view = UserGroupDetailView.as_view()
 
 
-class UserGroupListView(ListView):
+class UserGroupListView(ModelContextMixin, ListView):
     model = UserGroup
     template_name = "users/user_group_list.html"
     context_object_name = "user_groups"

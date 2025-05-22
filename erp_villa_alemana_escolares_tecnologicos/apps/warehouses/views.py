@@ -5,6 +5,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import WarehouseCreateForm
 from .forms import WarehouseEmployeeCreateForm
 from .forms import WarehouseEmployeeUpdateForm
@@ -27,7 +29,7 @@ class WarehouseDetailView(DetailView):
 warehouse_detail_view = WarehouseDetailView.as_view()
 
 
-class WarehouseListView(ListView):
+class WarehouseListView(ModelContextMixin, ListView):
     model = Warehouse
     template_name = "warehouse/warehouse_list.html"
     context_object_name = "warehouse"
@@ -82,7 +84,7 @@ class WarehouseEmployeeDetailView(DetailView):
 warehouse_employee_detail_view = WarehouseEmployeeDetailView.as_view()
 
 
-class WarehouseEmployeeListView(ListView):
+class WarehouseEmployeeListView(ModelContextMixin, ListView):
     model = WarehouseEmployee
     template_name = "warehouses/employee_list.html"
     context_object_name = "warehouse_employee"
@@ -137,7 +139,7 @@ class WarehouseInventoryDetailView(DetailView):
 warehouse_inventory_detail_view = WarehouseInventoryDetailView.as_view()
 
 
-class WarehouseInventoryListView(ListView):
+class WarehouseInventoryListView(ModelContextMixin, ListView):
     model = WarehouseInventory
     template_name = "warehouses/inventory_list.html"
     context_object_name = "warehouse_inventory"

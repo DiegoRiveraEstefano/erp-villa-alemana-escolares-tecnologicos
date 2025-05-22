@@ -4,6 +4,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import CustomerCreateForm
 from .forms import CustomerUpdateForm
 from .models import Customer
@@ -19,7 +21,7 @@ class CustomerDetailView(DetailView):
 customer_detail_view = CustomerDetailView.as_view()
 
 
-class CustomerListView(ListView):
+class CustomerListView(ModelContextMixin, ListView):
     model = Customer
     template_name = "customers/customer_list.html"
 

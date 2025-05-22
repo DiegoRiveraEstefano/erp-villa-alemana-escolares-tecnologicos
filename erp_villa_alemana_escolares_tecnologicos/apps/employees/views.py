@@ -4,6 +4,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import EmployeeCreateForm
 from .forms import EmployeeDepartmentCreateForm
 from .forms import EmployeeDepartmentUpdateForm
@@ -25,7 +27,7 @@ class EmployeeDetailView(DetailView):
 employee_detail_view = EmployeeDetailView.as_view()
 
 
-class EmployeeListView(ListView):
+class EmployeeListView(ModelContextMixin, ListView):
     model = Employee
     template_name = "employees/employee_list.html"
 
@@ -72,7 +74,7 @@ class EmployeeDepartmentDetailView(DetailView):
 employee_department_detail_view = EmployeeDepartmentDetailView.as_view()
 
 
-class EmployeeDepartmentListView(ListView):
+class EmployeeDepartmentListView(ModelContextMixin, ListView):
     model = EmployeeDepartment
     template_name = "employees/department_list.html"
 
@@ -119,7 +121,7 @@ class EmployeePositionDetailView(DetailView):
 employee_position_detail_view = EmployeePositionDetailView.as_view()
 
 
-class EmployeePositionListView(ListView):
+class EmployeePositionListView(ModelContextMixin, ListView):
     model = EmployeePosition
     template_name = "employee/position_list.html"
 

@@ -5,6 +5,8 @@ from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
 
+from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelContextMixin
+
 from .forms import StoreCreateForm
 from .forms import StoreEmployeeCreateForm
 from .forms import StoreEmployeeUpdateForm
@@ -24,7 +26,7 @@ class StoreDetailView(DetailView):
 store_detail_view = StoreDetailView.as_view()
 
 
-class StoreListView(ListView):
+class StoreListView(ModelContextMixin, ListView):
     model = Store
     template_name = "stores/store_list.html"
     context_object_name = "store"
@@ -79,7 +81,7 @@ class StoreEmployeeDetailView(DetailView):
 store_employee_detail_view = StoreEmployeeDetailView.as_view()
 
 
-class StoreEmployeeListView(ListView):
+class StoreEmployeeListView(ModelContextMixin, ListView):
     model = StoreEmployee
     template_name = "stores/employee_list.html"
     context_object_name = "store_employee"

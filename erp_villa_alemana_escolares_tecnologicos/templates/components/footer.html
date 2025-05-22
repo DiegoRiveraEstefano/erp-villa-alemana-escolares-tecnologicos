@@ -2,20 +2,15 @@
     <div class="container">
         <p>
             <small>
-                &copy; 2023 Diego Rivera
-                <a href="{% url 'about' %}">About</a>
-                <a href="{% url 'contact' %}">Contact</a>
-                <a href="{% url 'privacy' %}">Privacy</a>
-                <a href="{% url 'terms' %}">Terms</a>
-            </small>
-        </p>
-        <p>
-            <small>
-                <a href="{% url 'home' %}">Home</a>
-                <a href="{% url 'about' %}">About</a>
-                <a href="{% url 'contact' %}">Contact</a>
-                <a href="{% url 'privacy' %}">Privacy</a>
-                <a href="{% url 'terms' %}">Terms</a>
+                &copy; 2025 Diego Rivera
+                <a href="{% url 'warehouses:warehouse-list' %}" class="active">Bodegas</a>
+                <a href="{% url 'stores:store-list' %}" class="active">Tiendas</a>
+                <a href="{% url 'employees:employee-list' %}" class="active">Empleados</a>
+                <a href="{% url 'products:product-list' %}" class="active">Productos</a>
+                <a href="{% url 'customers:customer-list' %}" class="active">Clientes</a>
+                <a href="{% url 'sales:sale-list' %}" class="active">Ventas</a>
+                <a href="{% url 'address:address-list' %}" class="active">Direcciones</a>
+                <a href="{% url 'audits:list' %}" class="active">Logs</a>
             </small>
         </p>
     </div>

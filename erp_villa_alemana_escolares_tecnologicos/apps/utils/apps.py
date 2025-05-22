@@ -17,4 +17,6 @@ class UtilsConfig(AppConfig):
         Import signals when the app is ready.
         """
         with contextlib.suppress(ImportError):
+            import erp_villa_alemana_escolares_tecnologicos.apps.utils.templatetags.model_utils
+            import erp_villa_alemana_escolares_tecnologicos.apps.utils.templatetags.param_tags
             import erp_villa_alemana_escolares_tecnologicos.utils.signals  # noqa: F401
