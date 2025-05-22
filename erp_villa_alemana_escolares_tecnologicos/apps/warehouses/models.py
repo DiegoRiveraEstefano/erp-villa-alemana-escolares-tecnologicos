@@ -87,8 +87,8 @@ class Warehouse(models.Model):
         Returns the URL to access a particular warehouse instance.
         """
         return reverse(
-            "warehouses:detail",
-            kwargs={"slug": self.slug},
+            "warehouses:warehouse-detail",
+            kwargs={"warehouse_slug": self.slug},
         )
 
 
@@ -132,10 +132,6 @@ class WarehouseInventory(models.Model):
                 fields=["product"],
                 name="idx_warehouse_product",
             ),
-            models.Index(
-                fields=["warehouse"],
-                name="idx_warehouse_warehouse",
-            ),
         ]
         permissions = [
             ("can_view_warehouse_inventory", "Can view warehouse inventory"),
@@ -153,8 +149,8 @@ class WarehouseInventory(models.Model):
         return reverse(
             "warehouses:inventory-detail",
             kwargs={
-                "product_slug": self.product.slug,
-                "warehouse_slug": self.warehouse.slug,
+                "product-slug": self.product.slug,
+                "warehouse-slug": self.warehouse.slug,
             },
         )
 
@@ -201,10 +197,6 @@ class WarehouseEmployee(models.Model):
                 fields=["employee"],
                 name="idx_warehouse_employee",
             ),
-            models.Index(
-                fields=["warehouse"],
-                name="idx_warehouse_warehouse",
-            ),
         ]
         permissions = [
             ("can_view_warehouse_employee", "Can view warehouse employee"),
@@ -222,7 +214,7 @@ class WarehouseEmployee(models.Model):
         return reverse(
             "warehouses:employee-detail",
             kwargs={
-                "employee_slug": self.employee.slug,
-                "warehouse_slug": self.warehouse.slug,
+                "employee-pk": self.employee.pk,
+                "warehouse-slug": self.warehouse.slug,
             },
         )

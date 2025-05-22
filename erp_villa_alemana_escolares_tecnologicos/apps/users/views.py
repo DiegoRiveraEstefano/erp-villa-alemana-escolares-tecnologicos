@@ -11,10 +11,12 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView
 from django.views.generic import DetailView
 from django.views.generic import FormView
+from django.views.generic import ListView
 from django.views.generic import RedirectView
 from django.views.generic import UpdateView
 
 from erp_villa_alemana_escolares_tecnologicos.apps.users.models import User
+from erp_villa_alemana_escolares_tecnologicos.apps.users.models import UserGroup
 
 from .forms import UserCreationForm
 from .forms import UserLoginForm
@@ -227,3 +229,26 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
 
 
 user_redirect_view = UserRedirectView.as_view()
+
+
+class UserGroupDetailView(DetailView):
+    model = UserGroup
+    template_name = "users/views/user_group_detail.html"
+    slug_field = "pk"
+    slug_url_kwarg = "pk"
+    context_object_name = "user_group"
+
+
+user_group_detail_view = UserGroupDetailView.as_view()
+
+
+class UserGroupListView(ListView):
+    model = UserGroup
+    template_name = "users/views/user_group_list.html"
+    context_object_name = "user_groups"
+
+    def get_queryset(self):
+        return super().get_queryset()
+
+
+user_group_list_view = UserGroupListView.as_view()

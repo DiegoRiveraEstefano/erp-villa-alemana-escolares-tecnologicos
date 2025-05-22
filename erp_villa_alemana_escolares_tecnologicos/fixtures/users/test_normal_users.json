@@ -1,0 +1,38 @@
+[
+    {
+        "model": "users.User",
+        "pk": 101,
+        "fields": {
+            "username": "user01",
+            "password": "user01",
+            "email": "user01@user.com",
+            "is_staff": false,
+            "is_active": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 102,
+        "fields": {
+            "username": "user02",
+            "password": "user02",
+            "email": "user02@user.com",
+            "is_staff": false,
+            "is_active": true,
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 103,
+        "fields": {
+            "username": "user03",
+            "password": "user03",
+            "email": "user03@user.com",
+            "is_staff": false,
+            "is_active": true,
+            "is_superuser": false
+        }
+    }
+]

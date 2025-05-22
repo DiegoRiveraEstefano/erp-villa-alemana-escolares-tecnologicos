@@ -56,6 +56,6 @@ class Customer(Person):
         Returns the URL to access a particular customer instance.
         """
         return reverse(
-            "customers:detail",
+            "customers:customer-detail",
             kwargs={"pk": self.pk},
         )

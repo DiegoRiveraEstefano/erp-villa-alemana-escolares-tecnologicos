@@ -92,7 +92,7 @@ class Store(models.Model):
         Returns the URL to access a particular store instance.
         """
 
-        return reverse("stores:store-detail", kwargs={"slug": self.slug})
+        return reverse("stores:store-detail", kwargs={"store_slug": self.slug})
 
 
 class StoreEmployee(models.Model):
@@ -155,4 +155,4 @@ class StoreEmployee(models.Model):
         """
         Returns the URL to access a particular store employee instance.
         """
-        return reverse("stores:employee-detail", kwargs={"id": self.pk})
+        return reverse("stores:employee-detail", kwargs={"pk": self.pk})

@@ -1,0 +1,146 @@
+[
+    {
+        "model": "addresses.Region",
+        "pk": 0,
+        "fields": {
+            "number": 6,
+            "name": "Libertador General Bernardo O'Higgins",
+            "cod": "LGBO"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 1,
+        "fields": {
+            "number": 16,
+            "name": "Ñuble",
+            "cod": "NUBLE"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 2,
+        "fields": {
+            "number": 3,
+            "name": "Atacama",
+            "cod": "ATCMA"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 3,
+        "fields": {
+            "number": 11,
+            "name": "Aysén del General Carlos Ibáñez del Campo",
+            "cod": "AYSEN"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 4,
+        "fields": {
+            "number": 4,
+            "name": "Coquimbo",
+            "cod": "COQ"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 5,
+        "fields": {
+            "number": 8,
+            "name": "Biobío",
+            "cod": "BBIO"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 6,
+        "fields": {
+            "number": 7,
+            "name": "Maule",
+            "cod": "MAULE"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 7,
+        "fields": {
+            "number": 15,
+            "name": "Arica y Parinacota",
+            "cod": "AyP"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 8,
+        "fields": {
+            "number": 9,
+            "name": "La Araucanía",
+            "cod": "ARAUC"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 9,
+        "fields": {
+            "number": 10,
+            "name": "Los Lagos",
+            "cod": "LAGOS"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 10,
+        "fields": {
+            "number": 1,
+            "name": "Tarapacá",
+            "cod": "TPCA"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 11,
+        "fields": {
+            "number": 14,
+            "name": "Los Ríos",
+            "cod": "RIOS"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 12,
+        "fields": {
+            "number": 5,
+            "name": "Valparaíso",
+            "cod": "VALPO"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 13,
+        "fields": {
+            "number": 13,
+            "name": "Metropolitana de Santiago",
+            "cod": "RM"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 14,
+        "fields": {
+            "number": 12,
+            "name": "Magallanes y de la Antártica Chilena",
+            "cod": "MAG"
+        }
+    },
+    {
+        "model": "addresses.Region",
+        "pk": 15,
+        "fields": {
+            "number": 2,
+            "name": "Antofagasta",
+            "cod": "ANTOF"
+        }
+    }
+]

@@ -78,4 +78,4 @@ class UserGroup(BaseGroup):
             str: URL for group detail.
 
         """
-        return reverse("users:group-detail", kwargs={"slug": self.slug})
+        return reverse("users:group-detail", kwargs={"group_slug": self.slug})

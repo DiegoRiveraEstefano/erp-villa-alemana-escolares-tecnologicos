@@ -137,7 +137,7 @@ class UserUpdateForm(forms.ModelForm):
 
     """
 
-    usename = forms.CharField(
+    username = forms.CharField(
         max_length=128,
         required=False,
         label=_("User username"),

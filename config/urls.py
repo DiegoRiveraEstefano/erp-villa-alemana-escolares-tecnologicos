@@ -29,9 +29,48 @@ urlpatterns = [
             namespace="users",
         ),
     ),
-    # Your stuff: custom urls includes go here
-    # ...
-    # Media files
+    path(
+        "stores/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.stores.urls",
+            namespace="stores",
+        ),
+    ),
+    path(
+        "warehouses/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.warehouses.urls",
+            namespace="warehouses",
+        ),
+    ),
+    path(
+        "products/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.products.urls",
+            namespace="products",
+        ),
+    ),
+    path(
+        "customers/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.customers.urls",
+            namespace="customers",
+        ),
+    ),
+    path(
+        "employees/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.employees.urls",
+            namespace="employees",
+        ),
+    ),
+    path(
+        "sales/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.sales.urls",
+            namespace="sales",
+        ),
+    ),
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
 

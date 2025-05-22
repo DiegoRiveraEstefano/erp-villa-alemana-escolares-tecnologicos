@@ -9,7 +9,7 @@ class UtilsConfig(AppConfig):
     Configuration class for the Utils app.
     """
 
-    name = "erp_villa_alemana_escolares_tecnologicos.utils"
+    name = "erp_villa_alemana_escolares_tecnologicos.apps.utils"
     verbose_name = _("Utils")
 
     def ready(self):

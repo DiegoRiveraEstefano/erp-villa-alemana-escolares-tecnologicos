@@ -271,3 +271,7 @@ dump.rdb
 erp_villa_alemana_escolares_tecnologicos/media/
 
 .pytest_cache/
+
+cache/*
+.database/*
+.cache/*

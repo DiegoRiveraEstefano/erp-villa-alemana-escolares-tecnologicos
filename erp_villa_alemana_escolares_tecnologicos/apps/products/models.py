@@ -59,8 +59,8 @@ class ProductCategory(models.Model):
             str: URL for product category detail.
         """
         return reverse(
-            "products:category_detail",
-            kwargs={"slug": self.slug},
+            "products:category-detail",
+            kwargs={"category-slug": self.slug},
         )
 
     def clean(self):
@@ -148,6 +148,6 @@ class Product(models.Model):
             str: URL for product detail.
         """
         return reverse(
-            "products:detail",
-            kwargs={"slug": self.slug},
+            "products:product-detail",
+            kwargs={"product-slug": self.slug},
         )

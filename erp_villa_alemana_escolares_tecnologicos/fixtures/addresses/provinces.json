@@ -1,0 +1,506 @@
+[
+    {
+        "model": "addresses.Province",
+        "pk": 0,
+        "fields": {
+            "region": 7,
+            "name": "Parinacota",
+            "cod": "152"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 1,
+        "fields": {
+            "region": 12,
+            "name": "Petorca",
+            "cod": "054"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 2,
+        "fields": {
+            "region": 0,
+            "name": "Colchagua",
+            "cod": "063"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 3,
+        "fields": {
+            "region": 15,
+            "name": "Antofagasta",
+            "cod": "021"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 4,
+        "fields": {
+            "region": 1,
+            "name": "Diguillín",
+            "cod": "161"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 5,
+        "fields": {
+            "region": 12,
+            "name": "Isla de Pascua",
+            "cod": "052"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 6,
+        "fields": {
+            "region": 5,
+            "name": "Biobío",
+            "cod": "083"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 7,
+        "fields": {
+            "region": 13,
+            "name": "Chacabuco",
+            "cod": "133"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 8,
+        "fields": {
+            "region": 12,
+            "name": "San Felipe de Aconcagua",
+            "cod": "057"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 9,
+        "fields": {
+            "region": 4,
+            "name": "Elqui",
+            "cod": "041"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 10,
+        "fields": {
+            "region": 4,
+            "name": "Choapa",
+            "cod": "042"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 11,
+        "fields": {
+            "region": 13,
+            "name": "Melipilla",
+            "cod": "135"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 12,
+        "fields": {
+            "region": 6,
+            "name": "Curicó",
+            "cod": "073"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 13,
+        "fields": {
+            "region": 1,
+            "name": "Punilla",
+            "cod": "163"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 14,
+        "fields": {
+            "region": 9,
+            "name": "Osorno",
+            "cod": "103"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 15,
+        "fields": {
+            "region": 2,
+            "name": "Copiapó",
+            "cod": "031"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 16,
+        "fields": {
+            "region": 12,
+            "name": "Quillota",
+            "cod": "055"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 17,
+        "fields": {
+            "region": 8,
+            "name": "Malleco",
+            "cod": "092"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 18,
+        "fields": {
+            "region": 14,
+            "name": "Antártica Chilena",
+            "cod": "122"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 19,
+        "fields": {
+            "region": 12,
+            "name": "San Antonio",
+            "cod": "056"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 20,
+        "fields": {
+            "region": 6,
+            "name": "Talca",
+            "cod": "071"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 21,
+        "fields": {
+            "region": 1,
+            "name": "Itata",
+            "cod": "162"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 22,
+        "fields": {
+            "region": 10,
+            "name": "Tamarugal",
+            "cod": "014"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 23,
+        "fields": {
+            "region": 15,
+            "name": "El Loa",
+            "cod": "022"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 24,
+        "fields": {
+            "region": 14,
+            "name": "Tierra del Fuego",
+            "cod": "123"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 25,
+        "fields": {
+            "region": 13,
+            "name": "Talagante",
+            "cod": "136"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 26,
+        "fields": {
+            "region": 0,
+            "name": "Cardenal Caro",
+            "cod": "062"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 27,
+        "fields": {
+            "region": 12,
+            "name": "Valparaíso",
+            "cod": "051"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 28,
+        "fields": {
+            "region": 10,
+            "name": "Iquique",
+            "cod": "011"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 29,
+        "fields": {
+            "region": 5,
+            "name": "Concepción",
+            "cod": "081"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 30,
+        "fields": {
+            "region": 15,
+            "name": "Tocopilla",
+            "cod": "023"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 31,
+        "fields": {
+            "region": 2,
+            "name": "Huasco",
+            "cod": "033"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 32,
+        "fields": {
+            "region": 6,
+            "name": "Linares",
+            "cod": "074"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 33,
+        "fields": {
+            "region": 6,
+            "name": "Cauquenes",
+            "cod": "072"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 34,
+        "fields": {
+            "region": 11,
+            "name": "Ranco",
+            "cod": "142"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 35,
+        "fields": {
+            "region": 12,
+            "name": "Los Andes",
+            "cod": "053"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 36,
+        "fields": {
+            "region": 12,
+            "name": "Marga Marga",
+            "cod": "058"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 37,
+        "fields": {
+            "region": 14,
+            "name": "Magallanes",
+            "cod": "121"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 38,
+        "fields": {
+            "region": 11,
+            "name": "Valdivia",
+            "cod": "141"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 39,
+        "fields": {
+            "region": 3,
+            "name": "Aysén",
+            "cod": "112"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 40,
+        "fields": {
+            "region": 9,
+            "name": "Chiloé",
+            "cod": "102"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 41,
+        "fields": {
+            "region": 8,
+            "name": "Cautín",
+            "cod": "091"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 42,
+        "fields": {
+            "region": 5,
+            "name": "Arauco",
+            "cod": "082"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 43,
+        "fields": {
+            "region": 3,
+            "name": "General Carrera",
+            "cod": "114"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 44,
+        "fields": {
+            "region": 13,
+            "name": "Maipo",
+            "cod": "134"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 45,
+        "fields": {
+            "region": 3,
+            "name": "Coyhaique",
+            "cod": "111"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 46,
+        "fields": {
+            "region": 9,
+            "name": "Palena",
+            "cod": "104"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 47,
+        "fields": {
+            "region": 2,
+            "name": "Chañaral",
+            "cod": "032"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 48,
+        "fields": {
+            "region": 13,
+            "name": "Cordillera",
+            "cod": "132"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 49,
+        "fields": {
+            "region": 9,
+            "name": "Llanquihue",
+            "cod": "101"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 50,
+        "fields": {
+            "region": 4,
+            "name": "Limarí",
+            "cod": "043"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 51,
+        "fields": {
+            "region": 0,
+            "name": "Cachapoal",
+            "cod": "061"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 52,
+        "fields": {
+            "region": 14,
+            "name": "Última Esperanza",
+            "cod": "124"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 53,
+        "fields": {
+            "region": 13,
+            "name": "Santiago",
+            "cod": "131"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 54,
+        "fields": {
+            "region": 3,
+            "name": "Capitán Prat",
+            "cod": "113"
+        }
+    },
+    {
+        "model": "addresses.Province",
+        "pk": 55,
+        "fields": {
+            "region": 7,
+            "name": "Arica",
+            "cod": "151"
+        }
+    }
+]

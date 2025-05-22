@@ -63,6 +63,10 @@ CACHES = {
     },
 }
 
+# DATABASES
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # URLS
 # ------------------------------------------------------------------------------
@@ -96,6 +100,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "erp_villa_alemana_escolares_tecnologicos.apps.utils",
     "erp_villa_alemana_escolares_tecnologicos.apps.users",
     "erp_villa_alemana_escolares_tecnologicos.apps.addresses",
     "erp_villa_alemana_escolares_tecnologicos.apps.customers",

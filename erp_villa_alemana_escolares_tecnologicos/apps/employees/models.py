@@ -60,8 +60,8 @@ class EmployeeDepartment(models.Model):
         Returns the URL to access a particular department instance.
         """
         return reverse(
-            "employees:department_detail",
-            kwargs={"slug": self.slug},
+            "employees:department-detail",
+            kwargs={"department_slug": self.slug},
         )
 
 
@@ -121,8 +121,8 @@ class EmployeePosition(models.Model):
         Returns the URL to access a particular position instance.
         """
         return reverse(
-            "employees:position_detail",
-            kwargs={"slug": self.slug},
+            "employees:position-detail",
+            kwargs={"position_slug": self.slug},
         )
 
 

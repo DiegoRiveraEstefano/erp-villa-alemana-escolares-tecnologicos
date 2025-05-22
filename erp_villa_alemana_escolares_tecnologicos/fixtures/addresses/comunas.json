@@ -1,0 +1,3116 @@
+[
+    {
+        "model": "addresses.Comuna",
+        "pk": 0,
+        "fields": {
+            "province": 3,
+            "name": "Sierra Gorda",
+            "cod": "02103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 1,
+        "fields": {
+            "province": 1,
+            "name": "Papudo",
+            "cod": "05403"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 2,
+        "fields": {
+            "province": 29,
+            "name": "Hualpén",
+            "cod": "08112"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 3,
+        "fields": {
+            "province": 45,
+            "name": "Coyhaique",
+            "cod": "11101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 4,
+        "fields": {
+            "province": 19,
+            "name": "Algarrobo",
+            "cod": "05602"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 5,
+        "fields": {
+            "province": 41,
+            "name": "Galvarino",
+            "cod": "09106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 6,
+        "fields": {
+            "province": 12,
+            "name": "Romeral",
+            "cod": "07306"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 7,
+        "fields": {
+            "province": 28,
+            "name": "Alto Hospicio",
+            "cod": "01107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 8,
+        "fields": {
+            "province": 47,
+            "name": "Diego de Almagro",
+            "cod": "03202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 9,
+        "fields": {
+            "province": 53,
+            "name": "Vitacura",
+            "cod": "13132"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 10,
+        "fields": {
+            "province": 17,
+            "name": "Curacautín",
+            "cod": "09203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 11,
+        "fields": {
+            "province": 25,
+            "name": "Talagante",
+            "cod": "13601"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 12,
+        "fields": {
+            "province": 3,
+            "name": "Mejillones",
+            "cod": "02102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 13,
+        "fields": {
+            "province": 6,
+            "name": "Santa Bárbara",
+            "cod": "08311"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 14,
+        "fields": {
+            "province": 20,
+            "name": "Río Claro",
+            "cod": "07108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 15,
+        "fields": {
+            "province": 53,
+            "name": "La Florida",
+            "cod": "13110"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 16,
+        "fields": {
+            "province": 4,
+            "name": "Quillón",
+            "cod": "16107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 17,
+        "fields": {
+            "province": 31,
+            "name": "Vallenar",
+            "cod": "03301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 18,
+        "fields": {
+            "province": 6,
+            "name": "Yumbel",
+            "cod": "08313"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 19,
+        "fields": {
+            "province": 36,
+            "name": "Quilpué",
+            "cod": "05801"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 20,
+        "fields": {
+            "province": 10,
+            "name": "Illapel",
+            "cod": "04201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 21,
+        "fields": {
+            "province": 17,
+            "name": "Collipulli",
+            "cod": "09202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 22,
+        "fields": {
+            "province": 12,
+            "name": "Curicó",
+            "cod": "07301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 23,
+        "fields": {
+            "province": 10,
+            "name": "Salamanca",
+            "cod": "04204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 24,
+        "fields": {
+            "province": 18,
+            "name": "Antártica",
+            "cod": "12202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 25,
+        "fields": {
+            "province": 51,
+            "name": "Doñihue",
+            "cod": "06105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 26,
+        "fields": {
+            "province": 17,
+            "name": "Ercilla",
+            "cod": "09204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 27,
+        "fields": {
+            "province": 22,
+            "name": "Pozo Almonte",
+            "cod": "01401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 28,
+        "fields": {
+            "province": 37,
+            "name": "Río Verde",
+            "cod": "12103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 29,
+        "fields": {
+            "province": 51,
+            "name": "San Vicente",
+            "cod": "06117"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 30,
+        "fields": {
+            "province": 24,
+            "name": "Porvenir",
+            "cod": "12301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 31,
+        "fields": {
+            "province": 14,
+            "name": "San Pablo",
+            "cod": "10307"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 32,
+        "fields": {
+            "province": 51,
+            "name": "Rancagua",
+            "cod": "06101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 33,
+        "fields": {
+            "province": 36,
+            "name": "Limache",
+            "cod": "05802"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 34,
+        "fields": {
+            "province": 29,
+            "name": "Hualqui",
+            "cod": "08105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 35,
+        "fields": {
+            "province": 41,
+            "name": "Freire",
+            "cod": "09105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 36,
+        "fields": {
+            "province": 34,
+            "name": "Futrono",
+            "cod": "14202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 37,
+        "fields": {
+            "province": 17,
+            "name": "Victoria",
+            "cod": "09211"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 38,
+        "fields": {
+            "province": 26,
+            "name": "Marchihue",
+            "cod": "06204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 39,
+        "fields": {
+            "province": 46,
+            "name": "Palena",
+            "cod": "10404"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 40,
+        "fields": {
+            "province": 4,
+            "name": "Chillán",
+            "cod": "16101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 41,
+        "fields": {
+            "province": 51,
+            "name": "Requínoa",
+            "cod": "06116"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 42,
+        "fields": {
+            "province": 2,
+            "name": "Nancagua",
+            "cod": "06305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 43,
+        "fields": {
+            "province": 38,
+            "name": "Máfil",
+            "cod": "14105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 44,
+        "fields": {
+            "province": 12,
+            "name": "Hualañé",
+            "cod": "07302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 45,
+        "fields": {
+            "province": 50,
+            "name": "Punitaqui",
+            "cod": "04304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 46,
+        "fields": {
+            "province": 20,
+            "name": "Constitución",
+            "cod": "07102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 47,
+        "fields": {
+            "province": 6,
+            "name": "Negrete",
+            "cod": "08307"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 48,
+        "fields": {
+            "province": 53,
+            "name": "San Joaquín",
+            "cod": "13129"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 49,
+        "fields": {
+            "province": 38,
+            "name": "Corral",
+            "cod": "14102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 50,
+        "fields": {
+            "province": 41,
+            "name": "Villarrica",
+            "cod": "09120"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 51,
+        "fields": {
+            "province": 13,
+            "name": "San Nicolás",
+            "cod": "16305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 52,
+        "fields": {
+            "province": 50,
+            "name": "Monte Patria",
+            "cod": "04303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 53,
+        "fields": {
+            "province": 12,
+            "name": "Teno",
+            "cod": "07308"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 54,
+        "fields": {
+            "province": 53,
+            "name": "Lo Espejo",
+            "cod": "13116"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 55,
+        "fields": {
+            "province": 49,
+            "name": "Frutillar",
+            "cod": "10105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 56,
+        "fields": {
+            "province": 31,
+            "name": "Freirina",
+            "cod": "03303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 57,
+        "fields": {
+            "province": 12,
+            "name": "Vichuquén",
+            "cod": "07309"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 58,
+        "fields": {
+            "province": 38,
+            "name": "Mariquina",
+            "cod": "14106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 59,
+        "fields": {
+            "province": 39,
+            "name": "Aysén",
+            "cod": "11201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 60,
+        "fields": {
+            "province": 53,
+            "name": "Pedro Aguirre Cerda",
+            "cod": "13121"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 61,
+        "fields": {
+            "province": 53,
+            "name": "Quinta Normal",
+            "cod": "13126"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 62,
+        "fields": {
+            "province": 21,
+            "name": "Cobquecura",
+            "cod": "16202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 63,
+        "fields": {
+            "province": 32,
+            "name": "Parral",
+            "cod": "07404"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 64,
+        "fields": {
+            "province": 32,
+            "name": "Yerbas Buenas",
+            "cod": "07408"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 65,
+        "fields": {
+            "province": 17,
+            "name": "Los Sauces",
+            "cod": "09206"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 66,
+        "fields": {
+            "province": 27,
+            "name": "Juan Fernández",
+            "cod": "05104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 67,
+        "fields": {
+            "province": 40,
+            "name": "Queilén",
+            "cod": "10207"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 68,
+        "fields": {
+            "province": 48,
+            "name": "Pirque",
+            "cod": "13202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 69,
+        "fields": {
+            "province": 53,
+            "name": "Conchalí",
+            "cod": "13104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 70,
+        "fields": {
+            "province": 41,
+            "name": "Cholchol",
+            "cod": "09121"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 71,
+        "fields": {
+            "province": 50,
+            "name": "Río Hurtado",
+            "cod": "04305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 72,
+        "fields": {
+            "province": 41,
+            "name": "Pucón",
+            "cod": "09115"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 73,
+        "fields": {
+            "province": 15,
+            "name": "Caldera",
+            "cod": "03102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 74,
+        "fields": {
+            "province": 41,
+            "name": "Saavedra",
+            "cod": "09116"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 75,
+        "fields": {
+            "province": 47,
+            "name": "Chañaral",
+            "cod": "03201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 76,
+        "fields": {
+            "province": 53,
+            "name": "Estación Central",
+            "cod": "13106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 77,
+        "fields": {
+            "province": 38,
+            "name": "Paillaco",
+            "cod": "14107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 78,
+        "fields": {
+            "province": 6,
+            "name": "Nacimiento",
+            "cod": "08306"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 79,
+        "fields": {
+            "province": 53,
+            "name": "La Granja",
+            "cod": "13111"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 80,
+        "fields": {
+            "province": 22,
+            "name": "Camiña",
+            "cod": "01402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 81,
+        "fields": {
+            "province": 41,
+            "name": "Perquenco",
+            "cod": "09113"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 82,
+        "fields": {
+            "province": 33,
+            "name": "Cauquenes",
+            "cod": "07201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 83,
+        "fields": {
+            "province": 11,
+            "name": "San Pedro",
+            "cod": "13505"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 84,
+        "fields": {
+            "province": 15,
+            "name": "Tierra Amarilla",
+            "cod": "03103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 85,
+        "fields": {
+            "province": 2,
+            "name": "Palmilla",
+            "cod": "06306"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 86,
+        "fields": {
+            "province": 22,
+            "name": "Colchane",
+            "cod": "01403"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 87,
+        "fields": {
+            "province": 19,
+            "name": "El Quisco",
+            "cod": "05604"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 88,
+        "fields": {
+            "province": 23,
+            "name": "Ollagüe",
+            "cod": "02202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 89,
+        "fields": {
+            "province": 23,
+            "name": "Calama",
+            "cod": "02201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 90,
+        "fields": {
+            "province": 21,
+            "name": "Coelemu",
+            "cod": "16203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 91,
+        "fields": {
+            "province": 41,
+            "name": "Vilcún",
+            "cod": "09119"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 92,
+        "fields": {
+            "province": 52,
+            "name": "Torres del Paine",
+            "cod": "12402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 93,
+        "fields": {
+            "province": 51,
+            "name": "Machalí",
+            "cod": "06108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 94,
+        "fields": {
+            "province": 44,
+            "name": "Buin",
+            "cod": "13402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 95,
+        "fields": {
+            "province": 20,
+            "name": "San Clemente",
+            "cod": "07109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 96,
+        "fields": {
+            "province": 11,
+            "name": "Curacaví",
+            "cod": "13503"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 97,
+        "fields": {
+            "province": 6,
+            "name": "Laja",
+            "cod": "08304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 98,
+        "fields": {
+            "province": 41,
+            "name": "Lautaro",
+            "cod": "09108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 99,
+        "fields": {
+            "province": 26,
+            "name": "Navidad",
+            "cod": "06205"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 100,
+        "fields": {
+            "province": 21,
+            "name": "Portezuelo",
+            "cod": "16205"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 101,
+        "fields": {
+            "province": 4,
+            "name": "El Carmen",
+            "cod": "16104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 102,
+        "fields": {
+            "province": 53,
+            "name": "Recoleta",
+            "cod": "13127"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 103,
+        "fields": {
+            "province": 28,
+            "name": "Iquique",
+            "cod": "01101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 104,
+        "fields": {
+            "province": 48,
+            "name": "San José de Maipo",
+            "cod": "13203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 105,
+        "fields": {
+            "province": 51,
+            "name": "Mostazal",
+            "cod": "06110"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 106,
+        "fields": {
+            "province": 1,
+            "name": "Zapallar",
+            "cod": "05405"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 107,
+        "fields": {
+            "province": 49,
+            "name": "Maullín",
+            "cod": "10108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 108,
+        "fields": {
+            "province": 32,
+            "name": "Colbún",
+            "cod": "07402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 109,
+        "fields": {
+            "province": 49,
+            "name": "Puerto Varas",
+            "cod": "10109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 110,
+        "fields": {
+            "province": 14,
+            "name": "San Juan de la Costa",
+            "cod": "10306"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 111,
+        "fields": {
+            "province": 40,
+            "name": "Puqueldón",
+            "cod": "10206"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 112,
+        "fields": {
+            "province": 27,
+            "name": "Valparaíso",
+            "cod": "05101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 113,
+        "fields": {
+            "province": 46,
+            "name": "Futaleufú",
+            "cod": "10402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 114,
+        "fields": {
+            "province": 14,
+            "name": "Osorno",
+            "cod": "10301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 115,
+        "fields": {
+            "province": 35,
+            "name": "Rinconada",
+            "cod": "05303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 116,
+        "fields": {
+            "province": 54,
+            "name": "O'Higgins",
+            "cod": "11302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 117,
+        "fields": {
+            "province": 38,
+            "name": "Lanco",
+            "cod": "14103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 118,
+        "fields": {
+            "province": 30,
+            "name": "María Elena",
+            "cod": "02302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 119,
+        "fields": {
+            "province": 53,
+            "name": "Renca",
+            "cod": "13128"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 120,
+        "fields": {
+            "province": 20,
+            "name": "Pencahue",
+            "cod": "07107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 121,
+        "fields": {
+            "province": 41,
+            "name": "Curarrehue",
+            "cod": "09104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 122,
+        "fields": {
+            "province": 2,
+            "name": "Santa Cruz",
+            "cod": "06310"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 123,
+        "fields": {
+            "province": 4,
+            "name": "San Ignacio",
+            "cod": "16108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 124,
+        "fields": {
+            "province": 40,
+            "name": "Curaco de Vélez",
+            "cod": "10204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 125,
+        "fields": {
+            "province": 41,
+            "name": "Gorbea",
+            "cod": "09107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 126,
+        "fields": {
+            "province": 38,
+            "name": "Panguipulli",
+            "cod": "14108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 127,
+        "fields": {
+            "province": 29,
+            "name": "Tomé",
+            "cod": "08111"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 128,
+        "fields": {
+            "province": 42,
+            "name": "Tirúa",
+            "cod": "08207"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 129,
+        "fields": {
+            "province": 6,
+            "name": "Alto Biobío",
+            "cod": "08314"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 130,
+        "fields": {
+            "province": 51,
+            "name": "Malloa",
+            "cod": "06109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 131,
+        "fields": {
+            "province": 21,
+            "name": "Ninhue",
+            "cod": "16204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 132,
+        "fields": {
+            "province": 34,
+            "name": "La Unión",
+            "cod": "14201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 133,
+        "fields": {
+            "province": 46,
+            "name": "Chaitén",
+            "cod": "10401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 134,
+        "fields": {
+            "province": 6,
+            "name": "San Rosendo",
+            "cod": "08310"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 135,
+        "fields": {
+            "province": 37,
+            "name": "San Gregorio",
+            "cod": "12104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 136,
+        "fields": {
+            "province": 16,
+            "name": "La Cruz",
+            "cod": "05504"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 137,
+        "fields": {
+            "province": 14,
+            "name": "Puyehue",
+            "cod": "10304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 138,
+        "fields": {
+            "province": 39,
+            "name": "Guaitecas",
+            "cod": "11203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 139,
+        "fields": {
+            "province": 20,
+            "name": "Pelarco",
+            "cod": "07106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 140,
+        "fields": {
+            "province": 6,
+            "name": "Los Angeles",
+            "cod": "08301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 141,
+        "fields": {
+            "province": 40,
+            "name": "Ancud",
+            "cod": "10202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 142,
+        "fields": {
+            "province": 8,
+            "name": "Catemu",
+            "cod": "05702"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 143,
+        "fields": {
+            "province": 49,
+            "name": "Puerto Montt",
+            "cod": "10101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 144,
+        "fields": {
+            "province": 34,
+            "name": "Río Bueno",
+            "cod": "14204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 145,
+        "fields": {
+            "province": 48,
+            "name": "Puente Alto",
+            "cod": "13201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 146,
+        "fields": {
+            "province": 13,
+            "name": "San Carlos",
+            "cod": "16301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 147,
+        "fields": {
+            "province": 38,
+            "name": "Valdivia",
+            "cod": "14101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 148,
+        "fields": {
+            "province": 43,
+            "name": "Río Ibáñez",
+            "cod": "11402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 149,
+        "fields": {
+            "province": 41,
+            "name": "Cunco",
+            "cod": "09103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 150,
+        "fields": {
+            "province": 44,
+            "name": "Calera de Tango",
+            "cod": "13403"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 151,
+        "fields": {
+            "province": 53,
+            "name": "Santiago",
+            "cod": "13101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 152,
+        "fields": {
+            "province": 35,
+            "name": "Calle Larga",
+            "cod": "05302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 153,
+        "fields": {
+            "province": 0,
+            "name": "Putre",
+            "cod": "15201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 154,
+        "fields": {
+            "province": 29,
+            "name": "San Pedro de la Paz",
+            "cod": "08108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 155,
+        "fields": {
+            "province": 29,
+            "name": "Concepción",
+            "cod": "08101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 156,
+        "fields": {
+            "province": 53,
+            "name": "Macul",
+            "cod": "13118"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 157,
+        "fields": {
+            "province": 29,
+            "name": "Talcahuano",
+            "cod": "08110"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 158,
+        "fields": {
+            "province": 17,
+            "name": "Lumaco",
+            "cod": "09207"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 159,
+        "fields": {
+            "province": 20,
+            "name": "Empedrado",
+            "cod": "07104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 160,
+        "fields": {
+            "province": 1,
+            "name": "Cabildo",
+            "cod": "05402"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 161,
+        "fields": {
+            "province": 37,
+            "name": "Punta Arenas",
+            "cod": "12101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 162,
+        "fields": {
+            "province": 41,
+            "name": "Pitrufquén",
+            "cod": "09114"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 163,
+        "fields": {
+            "province": 22,
+            "name": "Pica",
+            "cod": "01405"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 164,
+        "fields": {
+            "province": 53,
+            "name": "Maipú",
+            "cod": "13119"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 165,
+        "fields": {
+            "province": 18,
+            "name": "Cabo de Hornos",
+            "cod": "12201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 166,
+        "fields": {
+            "province": 6,
+            "name": "Tucapel",
+            "cod": "08312"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 167,
+        "fields": {
+            "province": 27,
+            "name": "Quintero",
+            "cod": "05107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 168,
+        "fields": {
+            "province": 53,
+            "name": "San Miguel",
+            "cod": "13130"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 169,
+        "fields": {
+            "province": 51,
+            "name": "Peumo",
+            "cod": "06112"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 170,
+        "fields": {
+            "province": 44,
+            "name": "Paine",
+            "cod": "13404"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 171,
+        "fields": {
+            "province": 53,
+            "name": "Las Condes",
+            "cod": "13114"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 172,
+        "fields": {
+            "province": 11,
+            "name": "Melipilla",
+            "cod": "13501"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 173,
+        "fields": {
+            "province": 2,
+            "name": "Chépica",
+            "cod": "06302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 174,
+        "fields": {
+            "province": 41,
+            "name": "Nueva Imperial",
+            "cod": "09111"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 175,
+        "fields": {
+            "province": 46,
+            "name": "Hualaihué",
+            "cod": "10403"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 176,
+        "fields": {
+            "province": 41,
+            "name": "Toltén",
+            "cod": "09118"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 177,
+        "fields": {
+            "province": 54,
+            "name": "Cochrane",
+            "cod": "11301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 178,
+        "fields": {
+            "province": 3,
+            "name": "Antofagasta",
+            "cod": "02101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 179,
+        "fields": {
+            "province": 10,
+            "name": "Los Vilos",
+            "cod": "04203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 180,
+        "fields": {
+            "province": 11,
+            "name": "Alhué",
+            "cod": "13502"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 181,
+        "fields": {
+            "province": 41,
+            "name": "Loncoche",
+            "cod": "09109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 182,
+        "fields": {
+            "province": 16,
+            "name": "Hijuelas",
+            "cod": "05503"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 183,
+        "fields": {
+            "province": 53,
+            "name": "Pudahuel",
+            "cod": "13124"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 184,
+        "fields": {
+            "province": 51,
+            "name": "Coinco",
+            "cod": "06103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 185,
+        "fields": {
+            "province": 36,
+            "name": "Olmué",
+            "cod": "05803"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 186,
+        "fields": {
+            "province": 9,
+            "name": "Coquimbo",
+            "cod": "04102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 187,
+        "fields": {
+            "province": 51,
+            "name": "Graneros",
+            "cod": "06106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 188,
+        "fields": {
+            "province": 42,
+            "name": "Lebu",
+            "cod": "08201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 189,
+        "fields": {
+            "province": 20,
+            "name": "Maule",
+            "cod": "07105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 190,
+        "fields": {
+            "province": 35,
+            "name": "Los Andes",
+            "cod": "05301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 191,
+        "fields": {
+            "province": 26,
+            "name": "Litueche",
+            "cod": "06203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 192,
+        "fields": {
+            "province": 5,
+            "name": "Isla de Pascua",
+            "cod": "05201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 193,
+        "fields": {
+            "province": 43,
+            "name": "Chile Chico",
+            "cod": "11401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 194,
+        "fields": {
+            "province": 37,
+            "name": "Laguna Blanca",
+            "cod": "12102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 195,
+        "fields": {
+            "province": 49,
+            "name": "Cochamó",
+            "cod": "10103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 196,
+        "fields": {
+            "province": 2,
+            "name": "Lolol",
+            "cod": "06304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 197,
+        "fields": {
+            "province": 3,
+            "name": "Taltal",
+            "cod": "02104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 198,
+        "fields": {
+            "province": 41,
+            "name": "Teodoro Schmidt",
+            "cod": "09117"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 199,
+        "fields": {
+            "province": 4,
+            "name": "Pemuco",
+            "cod": "16105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 200,
+        "fields": {
+            "province": 29,
+            "name": "Santa Juana",
+            "cod": "08109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 201,
+        "fields": {
+            "province": 32,
+            "name": "Villa Alegre",
+            "cod": "07407"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 202,
+        "fields": {
+            "province": 21,
+            "name": "Quirihue",
+            "cod": "16201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 203,
+        "fields": {
+            "province": 17,
+            "name": "Renaico",
+            "cod": "09209"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 204,
+        "fields": {
+            "province": 50,
+            "name": "Combarbalá",
+            "cod": "04302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 205,
+        "fields": {
+            "province": 53,
+            "name": "Lo Prado",
+            "cod": "13117"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 206,
+        "fields": {
+            "province": 33,
+            "name": "Chanco",
+            "cod": "07202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 207,
+        "fields": {
+            "province": 7,
+            "name": "Lampa",
+            "cod": "13302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 208,
+        "fields": {
+            "province": 53,
+            "name": "La Pintana",
+            "cod": "13112"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 209,
+        "fields": {
+            "province": 53,
+            "name": "Ñuñoa",
+            "cod": "13120"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 210,
+        "fields": {
+            "province": 29,
+            "name": "Florida",
+            "cod": "08104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 211,
+        "fields": {
+            "province": 49,
+            "name": "Llanquihue",
+            "cod": "10107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 212,
+        "fields": {
+            "province": 16,
+            "name": "Calera",
+            "cod": "05502"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 213,
+        "fields": {
+            "province": 21,
+            "name": "Treguaco",
+            "cod": "16207"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 214,
+        "fields": {
+            "province": 26,
+            "name": "La Estrella",
+            "cod": "06202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 215,
+        "fields": {
+            "province": 14,
+            "name": "Río Negro",
+            "cod": "10305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 216,
+        "fields": {
+            "province": 19,
+            "name": "Santo Domingo",
+            "cod": "05606"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 217,
+        "fields": {
+            "province": 17,
+            "name": "Traiguén",
+            "cod": "09210"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 218,
+        "fields": {
+            "province": 1,
+            "name": "Petorca",
+            "cod": "05404"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 219,
+        "fields": {
+            "province": 32,
+            "name": "San Javier",
+            "cod": "07406"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 220,
+        "fields": {
+            "province": 40,
+            "name": "Dalcahue",
+            "cod": "10205"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 221,
+        "fields": {
+            "province": 53,
+            "name": "Cerrillos",
+            "cod": "13102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 222,
+        "fields": {
+            "province": 31,
+            "name": "Huasco",
+            "cod": "03304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 223,
+        "fields": {
+            "province": 51,
+            "name": "Coltauco",
+            "cod": "06104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 224,
+        "fields": {
+            "province": 10,
+            "name": "Canela",
+            "cod": "04202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 225,
+        "fields": {
+            "province": 12,
+            "name": "Rauco",
+            "cod": "07305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 226,
+        "fields": {
+            "province": 50,
+            "name": "Ovalle",
+            "cod": "04301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 227,
+        "fields": {
+            "province": 53,
+            "name": "Peñalolén",
+            "cod": "13122"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 228,
+        "fields": {
+            "province": 16,
+            "name": "Quillota",
+            "cod": "05501"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 229,
+        "fields": {
+            "province": 53,
+            "name": "Quilicura",
+            "cod": "13125"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 230,
+        "fields": {
+            "province": 35,
+            "name": "San Esteban",
+            "cod": "05304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 231,
+        "fields": {
+            "province": 51,
+            "name": "Las Cabras",
+            "cod": "06107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 232,
+        "fields": {
+            "province": 25,
+            "name": "Peñaflor",
+            "cod": "13605"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 233,
+        "fields": {
+            "province": 30,
+            "name": "Tocopilla",
+            "cod": "02301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 234,
+        "fields": {
+            "province": 33,
+            "name": "Pelluhue",
+            "cod": "07203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 235,
+        "fields": {
+            "province": 51,
+            "name": "Olivar",
+            "cod": "06111"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 236,
+        "fields": {
+            "province": 8,
+            "name": "San Felipe",
+            "cod": "05701"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 237,
+        "fields": {
+            "province": 6,
+            "name": "Antuco",
+            "cod": "08302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 238,
+        "fields": {
+            "province": 32,
+            "name": "Retiro",
+            "cod": "07405"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 239,
+        "fields": {
+            "province": 14,
+            "name": "Puerto Octay",
+            "cod": "10302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 240,
+        "fields": {
+            "province": 25,
+            "name": "El Monte",
+            "cod": "13602"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 241,
+        "fields": {
+            "province": 7,
+            "name": "Colina",
+            "cod": "13301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 242,
+        "fields": {
+            "province": 2,
+            "name": "Peralillo",
+            "cod": "06307"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 243,
+        "fields": {
+            "province": 9,
+            "name": "La Serena",
+            "cod": "04101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 244,
+        "fields": {
+            "province": 12,
+            "name": "Sagrada Familia",
+            "cod": "07307"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 245,
+        "fields": {
+            "province": 32,
+            "name": "Longaví",
+            "cod": "07403"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 246,
+        "fields": {
+            "province": 13,
+            "name": "Ñiquén",
+            "cod": "16303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 247,
+        "fields": {
+            "province": 26,
+            "name": "Pichilemu",
+            "cod": "06201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 248,
+        "fields": {
+            "province": 53,
+            "name": "La Reina",
+            "cod": "13113"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 249,
+        "fields": {
+            "province": 17,
+            "name": "Purén",
+            "cod": "09208"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 250,
+        "fields": {
+            "province": 27,
+            "name": "Viña del Mar",
+            "cod": "05109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 251,
+        "fields": {
+            "province": 25,
+            "name": "Padre Hurtado",
+            "cod": "13604"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 252,
+        "fields": {
+            "province": 16,
+            "name": "Nogales",
+            "cod": "05506"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 253,
+        "fields": {
+            "province": 55,
+            "name": "Arica",
+            "cod": "15101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 254,
+        "fields": {
+            "province": 27,
+            "name": "Puchuncaví",
+            "cod": "05105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 255,
+        "fields": {
+            "province": 8,
+            "name": "Panquehue",
+            "cod": "05704"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 256,
+        "fields": {
+            "province": 2,
+            "name": "Pumanque",
+            "cod": "06309"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 257,
+        "fields": {
+            "province": 51,
+            "name": "Pichidegua",
+            "cod": "06113"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 258,
+        "fields": {
+            "province": 53,
+            "name": "Providencia",
+            "cod": "13123"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 259,
+        "fields": {
+            "province": 36,
+            "name": "Villa Alemana",
+            "cod": "05804"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 260,
+        "fields": {
+            "province": 19,
+            "name": "San Antonio",
+            "cod": "05601"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 261,
+        "fields": {
+            "province": 31,
+            "name": "Alto del Carmen",
+            "cod": "03302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 262,
+        "fields": {
+            "province": 9,
+            "name": "Andacollo",
+            "cod": "04103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 263,
+        "fields": {
+            "province": 9,
+            "name": "La Higuera",
+            "cod": "04104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 264,
+        "fields": {
+            "province": 12,
+            "name": "Licantén",
+            "cod": "07303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 265,
+        "fields": {
+            "province": 53,
+            "name": "Lo Barnechea",
+            "cod": "13115"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 266,
+        "fields": {
+            "province": 13,
+            "name": "Coihueco",
+            "cod": "16302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 267,
+        "fields": {
+            "province": 9,
+            "name": "Paiguano",
+            "cod": "04105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 268,
+        "fields": {
+            "province": 29,
+            "name": "Chiguayante",
+            "cod": "08103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 269,
+        "fields": {
+            "province": 9,
+            "name": "Vicuña",
+            "cod": "04106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 270,
+        "fields": {
+            "province": 17,
+            "name": "Lonquimay",
+            "cod": "09205"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 271,
+        "fields": {
+            "province": 29,
+            "name": "Penco",
+            "cod": "08107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 272,
+        "fields": {
+            "province": 41,
+            "name": "Padre Las Casas",
+            "cod": "09112"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 273,
+        "fields": {
+            "province": 4,
+            "name": "Chillán Viejo",
+            "cod": "16103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 274,
+        "fields": {
+            "province": 22,
+            "name": "Huara",
+            "cod": "01404"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 275,
+        "fields": {
+            "province": 24,
+            "name": "Timaukel",
+            "cod": "12303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 276,
+        "fields": {
+            "province": 42,
+            "name": "Cañete",
+            "cod": "08203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 277,
+        "fields": {
+            "province": 42,
+            "name": "Los Alamos",
+            "cod": "08206"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 278,
+        "fields": {
+            "province": 52,
+            "name": "Natales",
+            "cod": "12401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 279,
+        "fields": {
+            "province": 51,
+            "name": "Codegua",
+            "cod": "06102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 280,
+        "fields": {
+            "province": 6,
+            "name": "Quilaco",
+            "cod": "08308"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 281,
+        "fields": {
+            "province": 53,
+            "name": "Cerro Navia",
+            "cod": "13103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 282,
+        "fields": {
+            "province": 45,
+            "name": "Lago Verde",
+            "cod": "11102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 283,
+        "fields": {
+            "province": 53,
+            "name": "Independencia",
+            "cod": "13108"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 284,
+        "fields": {
+            "province": 42,
+            "name": "Contulmo",
+            "cod": "08204"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 285,
+        "fields": {
+            "province": 11,
+            "name": "María Pinto",
+            "cod": "13504"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 286,
+        "fields": {
+            "province": 42,
+            "name": "Curanilahue",
+            "cod": "08205"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 287,
+        "fields": {
+            "province": 40,
+            "name": "Chonchi",
+            "cod": "10203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 288,
+        "fields": {
+            "province": 32,
+            "name": "Linares",
+            "cod": "07401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 289,
+        "fields": {
+            "province": 4,
+            "name": "Bulnes",
+            "cod": "16102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 290,
+        "fields": {
+            "province": 25,
+            "name": "Isla de Maipo",
+            "cod": "13603"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 291,
+        "fields": {
+            "province": 6,
+            "name": "Mulchén",
+            "cod": "08305"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 292,
+        "fields": {
+            "province": 40,
+            "name": "Quemchi",
+            "cod": "10209"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 293,
+        "fields": {
+            "province": 26,
+            "name": "Paredones",
+            "cod": "06206"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 294,
+        "fields": {
+            "province": 1,
+            "name": "La Ligua",
+            "cod": "05401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 295,
+        "fields": {
+            "province": 8,
+            "name": "Santa María",
+            "cod": "05706"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 296,
+        "fields": {
+            "province": 20,
+            "name": "Talca",
+            "cod": "07101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 297,
+        "fields": {
+            "province": 55,
+            "name": "Camarones",
+            "cod": "15102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 298,
+        "fields": {
+            "province": 49,
+            "name": "Calbuco",
+            "cod": "10102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 299,
+        "fields": {
+            "province": 21,
+            "name": "Ranquil",
+            "cod": "16206"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 300,
+        "fields": {
+            "province": 34,
+            "name": "Lago Ranco",
+            "cod": "14203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 301,
+        "fields": {
+            "province": 4,
+            "name": "Pinto",
+            "cod": "16106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 302,
+        "fields": {
+            "province": 15,
+            "name": "Copiapó",
+            "cod": "03101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 303,
+        "fields": {
+            "province": 27,
+            "name": "Concón",
+            "cod": "05103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 304,
+        "fields": {
+            "province": 4,
+            "name": "Yungay",
+            "cod": "16109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 305,
+        "fields": {
+            "province": 19,
+            "name": "El Tabo",
+            "cod": "05605"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 306,
+        "fields": {
+            "province": 24,
+            "name": "Primavera",
+            "cod": "12302"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 307,
+        "fields": {
+            "province": 23,
+            "name": "San Pedro de Atacama",
+            "cod": "02203"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 308,
+        "fields": {
+            "province": 14,
+            "name": "Purranque",
+            "cod": "10303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 309,
+        "fields": {
+            "province": 2,
+            "name": "San Fernando",
+            "cod": "06301"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 310,
+        "fields": {
+            "province": 27,
+            "name": "Casablanca",
+            "cod": "05102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 311,
+        "fields": {
+            "province": 40,
+            "name": "Quinchao",
+            "cod": "10210"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 312,
+        "fields": {
+            "province": 2,
+            "name": "Chimbarongo",
+            "cod": "06303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 313,
+        "fields": {
+            "province": 38,
+            "name": "Los Lagos",
+            "cod": "14104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 314,
+        "fields": {
+            "province": 41,
+            "name": "Carahue",
+            "cod": "09102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 315,
+        "fields": {
+            "province": 42,
+            "name": "Arauco",
+            "cod": "08202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 316,
+        "fields": {
+            "province": 39,
+            "name": "Cisnes",
+            "cod": "11202"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 317,
+        "fields": {
+            "province": 53,
+            "name": "El Bosque",
+            "cod": "13105"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 318,
+        "fields": {
+            "province": 44,
+            "name": "San Bernardo",
+            "cod": "13401"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 319,
+        "fields": {
+            "province": 13,
+            "name": "San Fabián",
+            "cod": "16304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 320,
+        "fields": {
+            "province": 51,
+            "name": "Rengo",
+            "cod": "06115"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 321,
+        "fields": {
+            "province": 49,
+            "name": "Los Muermos",
+            "cod": "10106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 322,
+        "fields": {
+            "province": 2,
+            "name": "Placilla",
+            "cod": "06308"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 323,
+        "fields": {
+            "province": 51,
+            "name": "Quinta de Tilcoco",
+            "cod": "06114"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 324,
+        "fields": {
+            "province": 41,
+            "name": "Temuco",
+            "cod": "09101"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 325,
+        "fields": {
+            "province": 12,
+            "name": "Molina",
+            "cod": "07304"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 326,
+        "fields": {
+            "province": 8,
+            "name": "Llaillay",
+            "cod": "05703"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 327,
+        "fields": {
+            "province": 29,
+            "name": "Lota",
+            "cod": "08106"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 328,
+        "fields": {
+            "province": 53,
+            "name": "San Ramón",
+            "cod": "13131"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 329,
+        "fields": {
+            "province": 40,
+            "name": "Castro",
+            "cod": "10201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 330,
+        "fields": {
+            "province": 53,
+            "name": "Huechuraba",
+            "cod": "13107"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 331,
+        "fields": {
+            "province": 17,
+            "name": "Angol",
+            "cod": "09201"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 332,
+        "fields": {
+            "province": 54,
+            "name": "Tortel",
+            "cod": "11303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 333,
+        "fields": {
+            "province": 6,
+            "name": "Quilleco",
+            "cod": "08309"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 334,
+        "fields": {
+            "province": 6,
+            "name": "Cabrero",
+            "cod": "08303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 335,
+        "fields": {
+            "province": 53,
+            "name": "La Cisterna",
+            "cod": "13109"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 336,
+        "fields": {
+            "province": 41,
+            "name": "Melipeuco",
+            "cod": "09110"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 337,
+        "fields": {
+            "province": 49,
+            "name": "Fresia",
+            "cod": "10104"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 338,
+        "fields": {
+            "province": 8,
+            "name": "Putaendo",
+            "cod": "05705"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 339,
+        "fields": {
+            "province": 20,
+            "name": "Curepto",
+            "cod": "07103"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 340,
+        "fields": {
+            "province": 7,
+            "name": "Tiltil",
+            "cod": "13303"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 341,
+        "fields": {
+            "province": 20,
+            "name": "San Rafael",
+            "cod": "07110"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 342,
+        "fields": {
+            "province": 40,
+            "name": "Quellón",
+            "cod": "10208"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 343,
+        "fields": {
+            "province": 19,
+            "name": "Cartagena",
+            "cod": "05603"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 344,
+        "fields": {
+            "province": 29,
+            "name": "Coronel",
+            "cod": "08102"
+        }
+    },
+    {
+        "model": "addresses.Comuna",
+        "pk": 345,
+        "fields": {
+            "province": 0,
+            "name": "General Lagos",
+            "cod": "15202"
+        }
+    }
+]
