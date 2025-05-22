@@ -116,9 +116,9 @@ INSTALLED_APPS = PRIORITY_APPS + DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {
-    "sites": "erp_villa_alemana_escolares_tecnologicos.contrib.sites.migrations",
-}
+# MIGRATION_MODULES = {
+#    "sites": "erp_villa_alemana_escolares_tecnologicos.contrib.sites.migrations",
+# }
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------

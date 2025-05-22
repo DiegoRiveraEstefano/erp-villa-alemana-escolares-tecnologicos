@@ -53,10 +53,6 @@ class UserGroup(BaseGroup):
         verbose_name_plural = _("Groups")
         constraints = [
             models.UniqueConstraint(
-                fields=["name"],
-                name="unique_group_name",
-            ),
-            models.UniqueConstraint(
                 fields=["slug"],
                 name="unique_group_slug",
             ),

@@ -1,4 +1,3 @@
-from django.core.exceptions import ValidationError
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -62,15 +61,6 @@ class ProductCategory(models.Model):
             "products:category-detail",
             kwargs={"category-slug": self.slug},
         )
-
-    def clean(self):
-        """
-        Custom validation to ensure the name is not empty.
-        """
-        if not self.name:
-            raise ValidationError(_("The name field cannot be empty."))
-        if ProductCategory.objects.filter(name=self.name).exists():
-            raise ValidationError(_("A category with this name already exists."))
 
 
 class Product(models.Model):

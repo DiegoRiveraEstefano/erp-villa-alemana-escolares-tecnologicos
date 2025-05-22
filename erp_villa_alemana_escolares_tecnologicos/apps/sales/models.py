@@ -79,18 +79,14 @@ class Sale(models.Model):
         ordering = ["-created_at"]
         constraints = [
             models.UniqueConstraint(
-                fields=["customer", "created_at"],
-                name="unique_sale_customer_created_at",
+                fields=["customer"],
+                name="unique_sale_customer",
             ),
         ]
         indexes = [
             models.Index(
                 fields=["customer"],
                 name="idx_sale_customer",
-            ),
-            models.Index(
-                fields=["created_at"],
-                name="idx_sale_created_at",
             ),
         ]
         permissions = [
