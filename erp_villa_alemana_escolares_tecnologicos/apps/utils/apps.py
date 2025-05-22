@@ -19,4 +19,5 @@ class UtilsConfig(AppConfig):
         with contextlib.suppress(ImportError):
             import erp_villa_alemana_escolares_tecnologicos.apps.utils.templatetags.model_utils
             import erp_villa_alemana_escolares_tecnologicos.apps.utils.templatetags.param_tags
+            import erp_villa_alemana_escolares_tecnologicos.apps.utils.templatetags.strings
             import erp_villa_alemana_escolares_tecnologicos.utils.signals  # noqa: F401

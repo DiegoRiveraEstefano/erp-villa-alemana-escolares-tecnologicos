@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ title|default:"Form" }}</h1>
+    {% block form_block %}
+        {% if form %}
+            <form {% if form_action %}action="{{ form_action }}"{% endif %}
+                  method="{{ form_method|default:'post' }}"
+                  class="container">
+                {% if form_method|default:"post" == "post" %}
+                    {% csrf_token %}
+                {% endif %}
+                {% for field in form %}
+                    <div>
+                        {{ field.label_tag }}
+                        {% if field.type == "checkbox" %}
+                            {{ field.field }}
+                            {{ field.label_tag }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                        {% if field.errors %}<div class="error">{{ field.errors|join:", " }}</div>{% endif %}
+                    </div>
+                {% endfor %}
+                <button type="submit">
+                    {% if form_method == "post" %}
+                        {{ form.submit_button_text|default:"Submit" }}
+                    {% else %}
+                        {{ form_method|title }} {{ form.submit_button_text|default:"Submit" }}
+                    {% endif %}
+                </button>
+            </form>
+        {% endif %}
+    {% endblock form_block %}
+{% endblock content %}
