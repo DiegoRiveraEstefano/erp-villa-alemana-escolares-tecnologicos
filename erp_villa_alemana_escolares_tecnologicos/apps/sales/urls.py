@@ -10,10 +10,10 @@ app_name = "sales"
 urlpatterns = [
     path("sale/", view=sale_list_view, name="sale-list"),
     path("sale/create/", view=sale_create_view, name="sale-create"),
-    path("sale/delete/<str:pk>", view=sale_delete_view, name="sale-delete"),
-    path("sale/update/<str:pk>", view=sale_update_view, name="sale-update"),
+    path("sale/delete/<int:pk>", view=sale_delete_view, name="sale-delete"),
+    path("sale/update/<int:pk>", view=sale_update_view, name="sale-update"),
     path(
-        "sale/detail/<str:pk>/",
+        "sale/detail/<int:pk>/",
         view=sale_detail_view,
         name="sale-detail",
     ),

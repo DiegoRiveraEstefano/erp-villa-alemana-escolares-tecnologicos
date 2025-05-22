@@ -11,7 +11,7 @@ from .models import Customer
 
 class CustomerDetailView(DetailView):
     model = Customer
-    template_name = "customers/views/customer_detail.html"
+    template_name = "customers/customer_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
 
@@ -21,7 +21,7 @@ customer_detail_view = CustomerDetailView.as_view()
 
 class CustomerListView(ListView):
     model = Customer
-    template_name = "customers/views/customer_list.html"
+    template_name = "customers/customer_list.html"
 
     def get_queryset(self):
         return super().get_queryset()
@@ -32,7 +32,7 @@ customer_list_view = CustomerListView.as_view()
 
 class CustomerCreateView(CreateView):
     model = Customer
-    template_name = "customers/views/customer_create.html"
+    template_name = "customers/customer_create.html"
     form_class = CustomerCreateForm
 
 
@@ -41,7 +41,7 @@ customer_create_view = CustomerCreateView.as_view()
 
 class CustomerUpdateView(UpdateView):
     model = Customer
-    template_name = "customers/views/customer_update.html"
+    template_name = "customers/customer_update.html"
     form_class = CustomerUpdateForm
 
 
@@ -50,7 +50,7 @@ customer_update_view = CustomerUpdateView.as_view()
 
 class CustomerDeleteView(DeleteView):
     model = Customer
-    template_name = "customers/views/customer_delete.html"
+    template_name = "customers/customer_delete.html"
 
 
 customer_delete_view = CustomerDeleteView.as_view()

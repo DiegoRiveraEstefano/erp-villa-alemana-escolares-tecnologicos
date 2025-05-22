@@ -15,7 +15,7 @@ from .models import StoreEmployee
 
 class StoreDetailView(DetailView):
     model = Store
-    template_name = "stores/views/store_detail.html"
+    template_name = "stores/store_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
     context_object_name = "store"
@@ -26,7 +26,7 @@ store_detail_view = StoreDetailView.as_view()
 
 class StoreListView(ListView):
     model = Store
-    template_name = "stores/views/store_list.html"
+    template_name = "stores/store_list.html"
     context_object_name = "store"
 
     def get_queryset(self):
@@ -38,7 +38,7 @@ store_list_view = StoreListView.as_view()
 
 class StoreCreateView(CreateView):
     model = Store
-    template_name = "stores/views/store_create.html"
+    template_name = "stores/store_create.html"
     form_class = StoreCreateForm
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
@@ -49,7 +49,7 @@ store_create_view = StoreCreateView.as_view()
 
 class StoreUpdateView(UpdateView):
     model = Store
-    template_name = "stores/views/store_update.html"
+    template_name = "stores/store_update.html"
     form_class = StoreUpdateForm
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
@@ -60,7 +60,7 @@ store_update_view = StoreUpdateView.as_view()
 
 class StoreDeleteView(DeleteView):
     model = Store
-    template_name = "stores/views/store_delete.html"
+    template_name = "stores/store_delete.html"
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
 
@@ -70,7 +70,7 @@ store_delete_view = StoreDeleteView.as_view()
 
 class StoreEmployeeDetailView(DetailView):
     model = StoreEmployee
-    template_name = "stores/views/store_employee_detail.html"
+    template_name = "stores/employee_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
     context_object_name = "store_employee"
@@ -81,7 +81,7 @@ store_employee_detail_view = StoreEmployeeDetailView.as_view()
 
 class StoreEmployeeListView(ListView):
     model = StoreEmployee
-    template_name = "stores/views/store_employee_list.html"
+    template_name = "stores/employee_list.html"
     context_object_name = "store_employee"
 
     def get_queryset(self):
@@ -93,7 +93,7 @@ store_employee_list_view = StoreEmployeeListView.as_view()
 
 class StoreEmployeeCreateView(CreateView):
     model = StoreEmployee
-    template_name = "stores/views/store_employee_create.html"
+    template_name = "stores/employee_create.html"
     form_class = StoreEmployeeCreateForm
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
@@ -104,7 +104,7 @@ store_employee_create_view = StoreEmployeeCreateView.as_view()
 
 class StoreEmployeeUpdateView(UpdateView):
     model = StoreEmployee
-    template_name = "stores/views/store_employee_update.html"
+    template_name = "stores/employee_update.html"
     form_class = StoreEmployeeUpdateForm
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
@@ -115,7 +115,7 @@ store_employee_update_view = StoreEmployeeUpdateView.as_view()
 
 class StoreEmployeeDeleteView(DeleteView):
     model = StoreEmployee
-    template_name = "stores/views/store_employee_delete.html"
+    template_name = "stores/employee_delete.html"
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
 

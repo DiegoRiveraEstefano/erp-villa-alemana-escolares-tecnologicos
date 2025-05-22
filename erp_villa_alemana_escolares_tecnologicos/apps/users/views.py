@@ -41,7 +41,7 @@ class UserCreateView(CreateView):
 
     model = User
     form_class = UserCreationForm
-    template_name = "users/views/user_create.html"
+    template_name = "users/user_create.html"
 
     def get_object(self, queryset: Any):
         return super().get_object(queryset)
@@ -70,7 +70,7 @@ class UserLoginFormView(FormView):
     """
 
     form_class = UserLoginForm
-    template_name = "users/views/user_login.html"
+    template_name = "users/user_login.html"
 
     def get_success_url(self) -> str:
         """Get the URL to redirect to after the user is logged in.
@@ -133,7 +133,7 @@ class UserLogOutView(FormView, LoginRequiredMixin, SuccessMessageMixin):
 
     """
 
-    template_name = "users/views/user_logout.html"
+    template_name = "users/user_logout.html"
     form_class = UserLogOutForm
     success_message = _("Successfully logged out")
 
@@ -167,7 +167,7 @@ class UserDetailView(LoginRequiredMixin, DetailView):
     model = User
     slug_field = "username"
     slug_url_kwarg = "username"
-    template_name = "users/views/user_detail.html"
+    template_name = "users/user_detail.html"
 
     def get_object(self):
         return self.request.user
@@ -195,7 +195,7 @@ class UserUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = User
     fields = ["name"]
     success_message = _("Information successfully updated")
-    template_name = "users/views/user_update.html"
+    template_name = "users/user_update.html"
 
     def get_success_url(self) -> str:
         assert self.request.user.is_authenticated  # type guard
@@ -233,7 +233,7 @@ user_redirect_view = UserRedirectView.as_view()
 
 class UserGroupDetailView(DetailView):
     model = UserGroup
-    template_name = "users/views/user_group_detail.html"
+    template_name = "users/user_group_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
     context_object_name = "user_group"
@@ -244,7 +244,7 @@ user_group_detail_view = UserGroupDetailView.as_view()
 
 class UserGroupListView(ListView):
     model = UserGroup
-    template_name = "users/views/user_group_list.html"
+    template_name = "users/user_group_list.html"
     context_object_name = "user_groups"
 
     def get_queryset(self):

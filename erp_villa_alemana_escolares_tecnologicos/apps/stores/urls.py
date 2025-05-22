@@ -32,12 +32,12 @@ urlpatterns = [
         name="employee-create",
     ),
     path(
-        "employee/delete/<str:pk>",
+        "employee/delete/<int:pk>",
         view=store_employee_delete_view,
         name="employee-delete",
     ),
     path(
-        "employee/detail/<str:pk>/",
+        "employee/detail/<int:pk>/",
         view=store_employee_detail_view,
         name="employee-detail",
     ),

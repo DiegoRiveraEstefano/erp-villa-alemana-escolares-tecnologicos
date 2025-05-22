@@ -46,17 +46,17 @@ urlpatterns = [
         name="employee-create",
     ),
     path(
-        "warehouse_employee/delete/<str:pk>",
+        "warehouse_employee/delete/<int:pk>",
         view=warehouse_employee_delete_view,
         name="employee-delete",
     ),
     path(
-        "warehouse_employee/update/<str:pk>",
+        "warehouse_employee/update/<int:pk>",
         view=warehouse_employee_update_view,
         name="employee-update",
     ),
     path(
-        "warehouse_employee/detail/<str:pk>/",
+        "warehouse_employee/detail/<int:pk>/",
         view=warehouse_employee_detail_view,
         name="employee-detail",
     ),
@@ -71,17 +71,17 @@ urlpatterns = [
         name="inventory-create",
     ),
     path(
-        "warehouse_inventory/delete/<str:pk>",
+        "warehouse_inventory/delete/<int:pk>",
         view=warehouse_inventory_delete_view,
         name="inventory-delete",
     ),
     path(
-        "warehouse_inventory/update/<str:pk>",
+        "warehouse_inventory/update/<int:pk>",
         view=warehouse_inventory_update_view,
         name="inventory-update",
     ),
     path(
-        "warehouse_inventory/detail/<str:pk>/",
+        "warehouse_inventory/detail/<int:pk>/",
         view=warehouse_inventory_detail_view,
         name="inventory-detail",
     ),

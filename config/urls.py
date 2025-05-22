@@ -71,6 +71,13 @@ urlpatterns = [
             namespace="sales",
         ),
     ),
+    path(
+        "address/",
+        include(
+            "erp_villa_alemana_escolares_tecnologicos.apps.addresses.urls",
+            namespace="address",
+        ),
+    ),
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
 

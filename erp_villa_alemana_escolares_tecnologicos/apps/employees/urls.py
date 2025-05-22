@@ -20,10 +20,10 @@ app_name = "employees"
 urlpatterns = [
     path("employee/", view=employee_list_view, name="employee-list"),
     path("employee/create/", view=employee_create_view, name="employee-create"),
-    path("employee/delete/<str:pk>", view=employee_delete_view, name="employee-delete"),
-    path("employee/update/<str:pk>", view=employee_update_view, name="employee-update"),
+    path("employee/delete/<int:pk>", view=employee_delete_view, name="employee-delete"),
+    path("employee/update/<int:pk>", view=employee_update_view, name="employee-update"),
     path(
-        "employee/detail/<str:pk>/",
+        "employee/detail/<int:pk>/",
         view=employee_detail_view,
         name="employee-detail",
     ),

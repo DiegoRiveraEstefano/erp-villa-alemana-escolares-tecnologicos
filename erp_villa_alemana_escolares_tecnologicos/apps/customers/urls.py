@@ -10,10 +10,10 @@ app_name = "customers"
 urlpatterns = [
     path("customer/", view=customer_list_view, name="customer-list"),
     path("customer/create/", view=customer_create_view, name="customer-create"),
-    path("customer/delete/<str:pk>", view=customer_delete_view, name="customer-delete"),
-    path("customer/update/<str:pk>", view=customer_update_view, name="customer-update"),
+    path("customer/delete/<int:pk>", view=customer_delete_view, name="customer-delete"),
+    path("customer/update/<int:pk>", view=customer_update_view, name="customer-update"),
     path(
-        "customer/detail/<str:pk>/",
+        "customer/detail/<int:pk>/",
         view=customer_detail_view,
         name="customer-detail",
     ),
