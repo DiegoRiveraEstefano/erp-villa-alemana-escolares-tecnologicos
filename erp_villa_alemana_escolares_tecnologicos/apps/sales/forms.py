@@ -20,7 +20,13 @@ class SaleCreateForm(forms.ModelForm):
 class SaleUpdateForm(forms.ModelForm):
     class Meta:
         model = Sale
-        fields = ()
+        fields = (
+            "customer",
+            "store",
+            "total_price",
+            "payment_method",
+            "status",
+        )
 
 
 class SaleDeleteForm(forms.ModelForm):
@@ -34,13 +40,21 @@ class SaleDeleteForm(forms.ModelForm):
 class SaleItemCreateForm(forms.ModelForm):
     class Meta:
         model = SaleItem
-        fields = ()
+        fields = (
+            "sale",
+            "product",
+            "quantity",
+        )
 
 
 class SaleItemUpdateForm(forms.ModelForm):
     class Meta:
         model = SaleItem
-        fields = ()
+        fields = (
+            "sale",
+            "product",
+            "quantity",
+        )
 
 
 class SaleItemDeleteForm(forms.ModelForm):

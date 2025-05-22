@@ -17,10 +17,11 @@ class Warehouse(models.Model):
     )
     address = models.ForeignKey(
         "addresses.Address",
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name="warehouses",
         verbose_name=_("Warehouse Address"),
         help_text=_("The address of the warehouse."),
+        null=True,
     )
 
     name = models.CharField(

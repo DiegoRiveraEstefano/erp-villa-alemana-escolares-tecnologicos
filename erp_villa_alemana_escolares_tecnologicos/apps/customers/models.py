@@ -12,10 +12,11 @@ class Customer(Person):
 
     address = models.ForeignKey(
         "addresses.Address",
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name="customers",
         verbose_name=_("Customer Address"),
         help_text=_("The address of the customer."),
+        null=True,
     )
 
     class Meta:

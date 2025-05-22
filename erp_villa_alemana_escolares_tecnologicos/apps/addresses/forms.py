@@ -2,18 +2,52 @@ from django import forms
 from django.utils.translation import gettext_lazy as _
 
 from .models import Address
+from .models import Comuna
 
 
 class AddressCreateForm(forms.ModelForm):
+    comuna = forms.ModelChoiceField(
+        queryset=Comuna.objects.all(),
+        label=_("Comuna"),
+        required=False,
+        help_text=_("Select the comuna."),
+    )
+
     class Meta:
         model = Address
-        fields = ()
+        fields = (
+            "street",
+            "number",
+            "postal_code",
+            "apartment",
+            "floor",
+            "description",
+            "comuna",
+        )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
 class AddressUpdateForm(forms.ModelForm):
+    comuna = forms.ModelChoiceField(
+        queryset=Comuna.objects.all(),
+        label=_("Comuna"),
+        required=False,
+        help_text=_("Select the comuna."),
+    )
+
     class Meta:
         model = Address
-        fields = ("pk",)
+        fields = (
+            "street",
+            "number",
+            "postal_code",
+            "apartment",
+            "floor",
+            "description",
+            "comuna",
+        )
 
 
 class AddressDeleteForm(forms.ModelForm):
@@ -21,4 +55,4 @@ class AddressDeleteForm(forms.ModelForm):
 
     class Meta:
         model = Address
-        fields = ("pk",)
+        fields = ()

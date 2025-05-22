@@ -41,10 +41,11 @@ class Store(models.Model):
     )
     address = models.ForeignKey(
         "addresses.Address",
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name="stores",
         verbose_name=_("Store Address"),
         help_text=_("The address of the store."),
+        null=True,
     )
     warehouse = models.ForeignKey(
         "warehouses.Warehouse",

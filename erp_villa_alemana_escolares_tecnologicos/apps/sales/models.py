@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
 
 
@@ -172,3 +173,10 @@ class SaleItem(models.Model):
             "sales:saleitem_detail",
             kwargs={"pk": self.pk},
         )
+
+    @cached_property
+    def get_total_price(self):
+        """
+        Returns the total price of the sale item.
+        """
+        return self.product.price * self.quantity

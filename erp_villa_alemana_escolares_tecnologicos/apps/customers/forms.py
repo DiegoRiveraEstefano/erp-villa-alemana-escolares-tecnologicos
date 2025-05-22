@@ -7,13 +7,23 @@ from .models import Customer
 class CustomerCreateForm(forms.ModelForm):
     class Meta:
         model = Customer
-        fields = ()
+        fields = (
+            "first_name",
+            "last_name",
+            "email",
+            "phone_number",
+        )
 
 
 class CustomerUpdateForm(forms.ModelForm):
     class Meta:
         model = Customer
-        fields = ()
+        fields = (
+            "first_name",
+            "last_name",
+            "email",
+            "phone_number",
+        )
 
 
 class CustomerDeleteForm(forms.ModelForm):

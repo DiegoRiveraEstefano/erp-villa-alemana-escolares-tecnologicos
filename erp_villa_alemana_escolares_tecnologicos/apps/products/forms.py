@@ -8,13 +8,25 @@ from .models import ProductCategory
 class ProductCreateForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+            "category",
+            "price",
+        )
 
 
 class ProductUpdateForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+            "category",
+            "price",
+        )
 
 
 class ProductDeleteForm(forms.ModelForm):
@@ -28,13 +40,21 @@ class ProductDeleteForm(forms.ModelForm):
 class ProductCategoryCreateForm(forms.ModelForm):
     class Meta:
         model = ProductCategory
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class ProductCategoryUpdateForm(forms.ModelForm):
     class Meta:
         model = ProductCategory
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class ProductCategoryDeleteForm(forms.ModelForm):

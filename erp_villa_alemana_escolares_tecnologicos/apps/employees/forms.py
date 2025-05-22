@@ -11,15 +11,61 @@ from erp_villa_alemana_escolares_tecnologicos.apps.employees.models import (
 
 
 class EmployeeCreateForm(forms.ModelForm):
+    department = forms.ModelChoiceField(
+        queryset=EmployeeDepartment.objects.all(),
+        required=True,
+        label=_("Department"),
+        help_text=_("The department associated with the employee."),
+    )
+    position = forms.ModelChoiceField(
+        queryset=EmployeePosition.objects.all(),
+        required=True,
+        label=_("Position"),
+        help_text=_("The position associated with the employee."),
+    )
+
     class Meta:
         model = Employee
-        fields = ()
+        fields = (
+            "department",
+            "position",
+            "hire_date",
+            "is_active",
+            "salary",
+            "first_name",
+            "last_name",
+            "email",
+            "phone_number",
+        )
 
 
 class EmployeeUpdateForm(forms.ModelForm):
+    department = forms.ModelChoiceField(
+        queryset=EmployeeDepartment.objects.all(),
+        required=True,
+        label=_("Department"),
+        help_text=_("The department associated with the employee."),
+    )
+    position = forms.ModelChoiceField(
+        queryset=EmployeePosition.objects.all(),
+        required=True,
+        label=_("Position"),
+        help_text=_("The position associated with the employee."),
+    )
+
     class Meta:
         model = Employee
-        fields = ()
+        fields = (
+            "department",
+            "position",
+            "hire_date",
+            "is_active",
+            "salary",
+            "first_name",
+            "last_name",
+            "email",
+            "phone_number",
+        )
 
 
 class EmployeeDeleteForm(forms.ModelForm):
@@ -33,13 +79,21 @@ class EmployeeDeleteForm(forms.ModelForm):
 class EmployeeDepartmentCreateForm(forms.ModelForm):
     class Meta:
         model = EmployeeDepartment
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class EmployeeDepartmentUpdateForm(forms.ModelForm):
     class Meta:
         model = EmployeeDepartment
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class EmployeeDepartmentDeleteForm(forms.ModelForm):
@@ -53,13 +107,21 @@ class EmployeeDepartmentDeleteForm(forms.ModelForm):
 class EmployeePositionCreateForm(forms.ModelForm):
     class Meta:
         model = EmployeePosition
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class EmployeePositionUpdateForm(forms.ModelForm):
     class Meta:
         model = EmployeePosition
-        fields = ()
+        fields = (
+            "name",
+            "slug",
+            "description",
+        )
 
 
 class EmployeePositionDeleteForm(forms.ModelForm):
