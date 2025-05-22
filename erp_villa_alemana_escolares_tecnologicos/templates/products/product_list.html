@@ -1,10 +1,1 @@
-{% extends "base.html" %}
-
-{% load model_utils %}
-
-{% block title %}
-    productos
-{% endblock title %}
-{% block content %}
-    {% include "components/auto_table.html" with object_list=objects fields=model|get_model_fields %}
-{% endblock content %}
+{% extends "_base_table.html" %}

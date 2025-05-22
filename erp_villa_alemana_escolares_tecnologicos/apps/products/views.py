@@ -62,7 +62,7 @@ class ProductDeleteView(DeleteView):
 product_delete_view = ProductDeleteView.as_view()
 
 
-class ProductCategoryDetailView(DetailView):
+class ProductCategoryDetailView(ModelContextMixin, DetailView):
     model = ProductCategory
     template_name = "products/category_detail.html"
     slug_field = "pk"
@@ -76,7 +76,6 @@ product_category_detail_view = ProductCategoryDetailView.as_view()
 class ProductCategoryListView(ModelContextMixin, ListView):
     model = ProductCategory
     template_name = "products/category_list.html"
-    context_object_name = "product_category"
 
     def get_queryset(self):
         return super().get_queryset()
@@ -90,7 +89,6 @@ class ProductCategoryCreateView(CreateView):
     template_name = "products/category_create.html"
     form_class = ProductCategoryCreateForm
     success_url = reverse_lazy("products:category-list")
-    context_object_name = "product_category"
 
 
 product_category_create_view = ProductCategoryCreateView.as_view()

@@ -1,5 +1,4 @@
 from django import template
-from django.db import models
 
 register = template.Library()
 
@@ -7,11 +6,10 @@ register = template.Library()
 @register.filter
 def get_attribute(obj, attr):
     """Gets an attribute from an object and handles related managers"""
+    assert isinstance(attr, str), "attr must be a string "
     try:
-        value = getattr(obj, attr)
-        if isinstance(value.__class__.objects, models.Manager):
-            return ", ".join(str(item) for item in value.all())
-    except Exception:
+        value = obj.__dict__[attr]
+    except Exception as _:
         return None
     return value
 

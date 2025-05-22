@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load strings %}
+{% load model_utils %}
+
+{% block title %}
+    {{ request.path|split:"/"|slice:"1:2"|join:"" }}
+{% endblock title %}
+{% block content %}
+    {% block table_title %}
+        <section class="container">
+            <h1>{{ request.path|split:"/"|slice:"0:2"|join:"" }}</h1>
+        </section>
+    {% endblock table_title %}
+    <section class="container">
+        {% for field in model|get_model_fields %}
+            <div>
+                <strong>{{ field.verbose_name|title }}</strong>:
+                {% with value=object|get_attribute:field.name %}
+                    {% if field.is_relation %}
+                        {{ value|default_if_none:"-" }}
+                    {% elif field.get_internal_type == 'DecimalField' %}
+                        {{ value|floatformat:2 }}
+                    {% elif field.get_internal_type == 'DateField' %}
+                        {{ value|date:"Y-m-d" }}
+                    {% elif field.get_internal_type == 'DateTimeField' %}
+                        {{ value|date:"Y-m-d H:i" }}
+                    {% elif field.get_internal_type == 'BooleanField' %}
+                        {{ value|yesno:"Yes,No" }}
+                    {% else %}
+                        {{ value|default:"-"|truncatechars:50 }}
+                    {% endif %}
+                {% endwith %}
+            </div>
+        {% endfor %}
+    </section>
+{% endblock content %}
