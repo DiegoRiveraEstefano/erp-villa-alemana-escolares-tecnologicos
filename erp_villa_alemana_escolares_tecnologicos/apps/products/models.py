@@ -59,7 +59,7 @@ class ProductCategory(models.Model):
         """
         return reverse(
             "products:category-detail",
-            kwargs={"category-slug": self.slug},
+            kwargs={"category_slug": self.slug},
         )
 
 
@@ -139,5 +139,5 @@ class Product(models.Model):
         """
         return reverse(
             "products:product-detail",
-            kwargs={"product-slug": self.slug},
+            kwargs={"product_slug": self.slug},
         )
