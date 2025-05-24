@@ -18,8 +18,8 @@ from .models import StoreEmployee
 class StoreDetailView(ModelContextMixin, DetailView):
     model = Store
     template_name = "stores/store_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "store_slug"
     context_object_name = "store"
 
 
@@ -55,6 +55,8 @@ class StoreUpdateView(UpdateView):
     form_class = StoreUpdateForm
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
+    slug_field = "slug"
+    slug_url_kwarg = "store_slug"
 
 
 store_update_view = StoreUpdateView.as_view()
@@ -65,6 +67,8 @@ class StoreDeleteView(DeleteView):
     template_name = "stores/store_delete.html"
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
+    slug_field = "slug"
+    slug_url_kwarg = "store_slug"
 
 
 store_delete_view = StoreDeleteView.as_view()

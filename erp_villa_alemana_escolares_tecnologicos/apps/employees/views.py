@@ -8,8 +8,10 @@ from erp_villa_alemana_escolares_tecnologicos.apps.utils.mixins import ModelCont
 
 from .forms import EmployeeCreateForm
 from .forms import EmployeeDepartmentCreateForm
+from .forms import EmployeeDepartmentDeleteForm
 from .forms import EmployeeDepartmentUpdateForm
 from .forms import EmployeePositionCreateForm
+from .forms import EmployeePositionDeleteForm
 from .forms import EmployeePositionUpdateForm
 from .forms import EmployeeUpdateForm
 from .models import Employee
@@ -67,8 +69,8 @@ employee_delete_view = EmployeeDeleteView.as_view()
 class EmployeeDepartmentDetailView(ModelContextMixin, DetailView):
     model = EmployeeDepartment
     template_name = "employees/department_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "department_slug"
 
 
 employee_department_detail_view = EmployeeDepartmentDetailView.as_view()
@@ -98,6 +100,8 @@ class EmployeeDepartmentUpdateView(UpdateView):
     model = EmployeeDepartment
     template_name = "employees/department_update.html"
     form_class = EmployeeDepartmentUpdateForm
+    slug_field = "slug"
+    slug_url_kwarg = "department_slug"
 
 
 employee_department_update_view = EmployeeDepartmentUpdateView.as_view()
@@ -106,6 +110,9 @@ employee_department_update_view = EmployeeDepartmentUpdateView.as_view()
 class EmployeeDepartmentDeleteView(DeleteView):
     model = EmployeeDepartment
     template_name = "employees/department_delete.html"
+    form_class = EmployeeDepartmentDeleteForm
+    slug_field = "slug"
+    slug_url_kwarg = "department_slug"
 
 
 employee_department_delete_view = EmployeeDepartmentDeleteView.as_view()
@@ -114,8 +121,8 @@ employee_department_delete_view = EmployeeDepartmentDeleteView.as_view()
 class EmployeePositionDetailView(ModelContextMixin, DetailView):
     model = EmployeePosition
     template_name = "employee/position_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "position_slug"
 
 
 employee_position_detail_view = EmployeePositionDetailView.as_view()
@@ -145,6 +152,8 @@ class EmployeePositionUpdateView(UpdateView):
     model = EmployeePosition
     template_name = "employee/position_update.html"
     form_class = EmployeePositionUpdateForm
+    slug_field = "slug"
+    slug_url_kwarg = "position_slug"
 
 
 employee_position_update_view = EmployeePositionUpdateView.as_view()
@@ -153,6 +162,9 @@ employee_position_update_view = EmployeePositionUpdateView.as_view()
 class EmployeePositionDeleteView(DeleteView):
     model = EmployeePosition
     template_name = "employee/position_delete.html"
+    form_class = EmployeePositionDeleteForm
+    slug_field = "slug"
+    slug_url_kwarg = "position_slug"
 
 
 employee_position_delete_view = EmployeePositionDeleteView.as_view()

@@ -41,6 +41,16 @@ class ProductCreateView(CreateView):
     template_name = "products/product_create.html"
     form_class = ProductCreateForm
 
+    def get_success_url(self):
+        """
+        Get URL for product's detail view after creation.
+
+        Returns:
+            str: URL for product detail.
+        """
+        assert self.object is not None, "Object must be set before calling this method."
+        return self.object.get_absolute_url()
+
 
 product_create_view = ProductCreateView.as_view()
 
@@ -49,6 +59,7 @@ class ProductUpdateView(UpdateView):
     model = Product
     template_name = "products/product_update.html"
     form_class = ProductUpdateForm
+    success_url = reverse_lazy("products:product-list")
     slug_field = "slug"
     slug_url_kwarg = "product_slug"
 
@@ -59,6 +70,7 @@ product_update_view = ProductUpdateView.as_view()
 class ProductDeleteView(DeleteView):
     model = Product
     template_name = "products/product_delete.html"
+    success_url = reverse_lazy("products:product-list")
     slug_field = "slug"
     slug_url_kwarg = "product_slug"
 
@@ -69,8 +81,8 @@ product_delete_view = ProductDeleteView.as_view()
 class ProductCategoryDetailView(ModelContextMixin, DetailView):
     model = ProductCategory
     template_name = "products/category_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "category_slug"
     context_object_name = "product_category"
 
 
@@ -104,6 +116,8 @@ class ProductCategoryUpdateView(UpdateView):
     form_class = ProductCategoryUpdateForm
     success_url = reverse_lazy("products:category-list")
     context_object_name = "product_category"
+    slug_field = "slug"
+    slug_url_kwarg = "category_slug"
 
 
 product_category_update_view = ProductCategoryUpdateView.as_view()
@@ -114,6 +128,8 @@ class ProductCategoryDeleteView(DeleteView):
     template_name = "products/category_delete.html"
     success_url = reverse_lazy("products:category-list")
     context_object_name = "product_category"
+    slug_field = "slug"
+    slug_url_kwarg = "category_slug"
 
 
 product_category_delete_view = ProductCategoryDeleteView.as_view()

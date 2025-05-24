@@ -21,8 +21,8 @@ from .models import WarehouseInventory
 class WarehouseDetailView(ModelContextMixin, DetailView):
     model = Warehouse
     template_name = "warehouse/warehouse_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "warehouse_slug"
     context_object_name = "warehouse"
 
 
@@ -58,6 +58,8 @@ class WarehouseUpdateView(UpdateView):
     form_class = WarehouseUpdateForm
     success_url = reverse_lazy("warehouse:warehouse-list")
     context_object_name = "warehouse"
+    slug_field = "slug"
+    slug_url_kwarg = "warehouse_slug"
 
 
 warehouse_update_view = WarehouseUpdateView.as_view()
@@ -68,6 +70,8 @@ class WarehouseDeleteView(DeleteView):
     template_name = "warehouse/warehouse_delete.html"
     success_url = reverse_lazy("warehouse:warehouse-list")
     context_object_name = "warehouse"
+    slug_field = "slug"
+    slug_url_kwarg = "warehouse_slug"
 
 
 warehouse_delete_view = WarehouseDeleteView.as_view()
