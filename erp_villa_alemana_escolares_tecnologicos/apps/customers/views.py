@@ -11,7 +11,7 @@ from .forms import CustomerUpdateForm
 from .models import Customer
 
 
-class CustomerDetailView(DetailView):
+class CustomerDetailView(ModelContextMixin, DetailView):
     model = Customer
     template_name = "customers/customer_detail.html"
     slug_field = "pk"

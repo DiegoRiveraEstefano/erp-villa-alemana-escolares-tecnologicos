@@ -232,7 +232,7 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
 user_redirect_view = UserRedirectView.as_view()
 
 
-class UserGroupDetailView(DetailView):
+class UserGroupDetailView(ModelContextMixin, DetailView):
     model = UserGroup
     template_name = "users/user_group_detail.html"
     slug_field = "pk"

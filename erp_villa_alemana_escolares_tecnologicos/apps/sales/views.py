@@ -12,7 +12,7 @@ from .forms import SaleUpdateForm
 from .models import Sale
 
 
-class SaleDetailView(DetailView):
+class SaleDetailView(ModelContextMixin, DetailView):
     model = Sale
     template_name = "sales/sale_detail.html"
     slug_field = "pk"

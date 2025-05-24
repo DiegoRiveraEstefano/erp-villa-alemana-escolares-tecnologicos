@@ -15,11 +15,11 @@ from .models import Product
 from .models import ProductCategory
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(ModelContextMixin, DetailView):
     model = Product
     template_name = "products/product_detail.html"
-    slug_field = "pk"
-    slug_url_kwarg = "pk"
+    slug_field = "slug"
+    slug_url_kwarg = "product_slug"
 
 
 product_detail_view = ProductDetailView.as_view()
@@ -49,6 +49,8 @@ class ProductUpdateView(UpdateView):
     model = Product
     template_name = "products/product_update.html"
     form_class = ProductUpdateForm
+    slug_field = "slug"
+    slug_url_kwarg = "product_slug"
 
 
 product_update_view = ProductUpdateView.as_view()
@@ -57,6 +59,8 @@ product_update_view = ProductUpdateView.as_view()
 class ProductDeleteView(DeleteView):
     model = Product
     template_name = "products/product_delete.html"
+    slug_field = "slug"
+    slug_url_kwarg = "product_slug"
 
 
 product_delete_view = ProductDeleteView.as_view()

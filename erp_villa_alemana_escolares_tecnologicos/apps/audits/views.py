@@ -17,7 +17,7 @@ class AuditListView(ModelContextMixin, ListView):
 audit_list_view = AuditListView.as_view()
 
 
-class AuditDetailView(DetailView):
+class AuditDetailView(ModelContextMixin, DetailView):
     model = LogEntry
     template_name = "audits/audit_detail.html"
     context_object_name = "audit"

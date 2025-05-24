@@ -15,7 +15,7 @@ from .models import Store
 from .models import StoreEmployee
 
 
-class StoreDetailView(DetailView):
+class StoreDetailView(ModelContextMixin, DetailView):
     model = Store
     template_name = "stores/store_detail.html"
     slug_field = "pk"
@@ -70,7 +70,7 @@ class StoreDeleteView(DeleteView):
 store_delete_view = StoreDeleteView.as_view()
 
 
-class StoreEmployeeDetailView(DetailView):
+class StoreEmployeeDetailView(ModelContextMixin, DetailView):
     model = StoreEmployee
     template_name = "stores/employee_detail.html"
     slug_field = "pk"

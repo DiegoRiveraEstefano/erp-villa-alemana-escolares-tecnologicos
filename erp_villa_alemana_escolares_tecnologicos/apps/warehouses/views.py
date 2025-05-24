@@ -18,7 +18,7 @@ from .models import WarehouseEmployee
 from .models import WarehouseInventory
 
 
-class WarehouseDetailView(DetailView):
+class WarehouseDetailView(ModelContextMixin, DetailView):
     model = Warehouse
     template_name = "warehouse/warehouse_detail.html"
     slug_field = "pk"
@@ -73,7 +73,7 @@ class WarehouseDeleteView(DeleteView):
 warehouse_delete_view = WarehouseDeleteView.as_view()
 
 
-class WarehouseEmployeeDetailView(DetailView):
+class WarehouseEmployeeDetailView(ModelContextMixin, DetailView):
     model = WarehouseEmployee
     template_name = "warehouses/employee_detail.html"
     slug_field = "pk"
@@ -128,7 +128,7 @@ class WarehouseEmployeeDeleteView(DeleteView):
 warehouse_employee_delete_view = WarehouseEmployeeDeleteView.as_view()
 
 
-class WarehouseInventoryDetailView(DetailView):
+class WarehouseInventoryDetailView(ModelContextMixin, DetailView):
     model = WarehouseInventory
     template_name = "warehouses/inventory_detail.html"
     slug_field = "pk"

@@ -12,7 +12,7 @@ from .forms import AddressUpdateForm
 from .models import Address
 
 
-class AddressDetailView(DetailView):
+class AddressDetailView(ModelContextMixin, DetailView):
     model = Address
     template_name = "address/address_detail.html"
     slug_field = "pk"

@@ -17,7 +17,7 @@ from .models import EmployeeDepartment
 from .models import EmployeePosition
 
 
-class EmployeeDetailView(DetailView):
+class EmployeeDetailView(ModelContextMixin, DetailView):
     model = Employee
     template_name = "employees/employee_detail.html"
     slug_field = "pk"
@@ -64,7 +64,7 @@ class EmployeeDeleteView(DeleteView):
 employee_delete_view = EmployeeDeleteView.as_view()
 
 
-class EmployeeDepartmentDetailView(DetailView):
+class EmployeeDepartmentDetailView(ModelContextMixin, DetailView):
     model = EmployeeDepartment
     template_name = "employees/department_detail.html"
     slug_field = "pk"
@@ -111,7 +111,7 @@ class EmployeeDepartmentDeleteView(DeleteView):
 employee_department_delete_view = EmployeeDepartmentDeleteView.as_view()
 
 
-class EmployeePositionDetailView(DetailView):
+class EmployeePositionDetailView(ModelContextMixin, DetailView):
     model = EmployeePosition
     template_name = "employee/position_detail.html"
     slug_field = "pk"
