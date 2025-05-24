@@ -2,6 +2,9 @@
 
 {% load model_utils %}
 
+{% block buttons %}
+    {% with add_url="address:address-create" %}{{ block.super }}{% endwith %}
+{% endblock buttons %}
 {% block table_block %}
-    {% include "components/auto_table.html" with add_url="address:address-create" detail_url_name='address:address-detail' edit_url_name="address:address-update" object_list=object_list fields=model|get_model_fields %}
+    {% include "components/auto_table.html" with detail_url_name='address:address-detail' edit_url_name="address:address-update" object_list=object_list fields=model|get_model_fields %}
 {% endblock table_block %}
