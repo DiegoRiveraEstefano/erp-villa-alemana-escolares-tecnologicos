@@ -1,0 +1,7 @@
+{% extends "_base_detail.html" %}
+
+{% with edit_url="sales:sale-update" %}
+    {% block buttons %}
+        {{ block.super }}
+    {% endblock buttons %}
+{% endwith %}

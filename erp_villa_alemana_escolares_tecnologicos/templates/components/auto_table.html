@@ -33,20 +33,20 @@
                 {% if detail_url_name or edit_url_name %}
                     <td>
                         {% if detail_url_name %}
-                            {% if slug_field %}
-                                <a href="{% url detail_url_name object.slug %}">View</a>
-                            {% else %}
-                                <a href="{% url detail_url_name object.pk %}">View</a>
-                            {% endif %}
+                            <button>
+                                <a class="contrast"
+                                   href="{% if use_slug %}{% url detail_url_name object.slug %}{% else %}{% url detail_url_name object.pk %}{% endif %}">
+                                    View
+                                </a>
+                            </button>
                         {% endif %}
                         {% if edit_url_name %}
-                            {% if slug_field %}
-                                <a href="{% url edit_url_name object.slug %}"
-                                   class="btn btn-sm btn-warning">Edit</a>
-                            {% else %}
-                                <a href="{% url edit_url_name object.pk %}"
-                                   class="btn btn-sm btn-warning">Edit</a>
-                            {% endif %}
+                            <button>
+                                <a class="contrast"
+                                   href="{% if use_slug %}{% url edit_url_name object.slug %}{% else %}{% url edit_url_name object.pk %}{% endif %}">
+                                    Edit
+                                </a>
+                            </button>
                         {% endif %}
                     </td>
                 {% endif %}

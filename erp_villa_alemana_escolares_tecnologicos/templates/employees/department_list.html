@@ -1,1 +1,7 @@
 {% extends "_base_table.html" %}
+
+{% load model_utils %}
+
+{% block table_block %}
+    {% include "components/auto_table.html" with add_url="employees:department-create" detail_url_name='employees:department-detail' edit_url_name="employees:department-update" use_slug=true object_list=object_list fields=model|get_model_fields %}
+{% endblock table_block %}

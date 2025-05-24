@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
+{% load strings %}
+
 {% block content %}
-    <h1>{{ title|default:"Form" }}</h1>
+    <h1>Form {{ request.path|split:"/"|slice:"1:2"|join:"" }}</h1>
     {% block form_block %}
         {% if form %}
             <form {% if form_action %}action="{{ form_action }}"{% endif %}
@@ -22,13 +24,16 @@
                         {% if field.errors %}<div class="error">{{ field.errors|join:", " }}</div>{% endif %}
                     </div>
                 {% endfor %}
-                <button type="submit">
-                    {% if form_method == "post" %}
-                        {{ form.submit_button_text|default:"Submit" }}
-                    {% else %}
-                        {{ form_method|title }} {{ form.submit_button_text|default:"Submit" }}
-                    {% endif %}
-                </button>
+                <div>
+                    <button type="submit">
+                        {% if form_method == "post" %}
+                            {{ form.submit_button_text|default:"Submit" }}
+                        {% else %}
+                            {{ form_method|title }} {{ form.submit_button_text|default:"Submit" }}
+                        {% endif %}
+                    </button>
+                    <button onclick="history.back()" class="active">Cancelar</button>
+                </div>
             </form>
         {% endif %}
     {% endblock form_block %}

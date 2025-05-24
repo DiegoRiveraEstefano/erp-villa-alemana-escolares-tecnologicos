@@ -6,12 +6,27 @@
 {% block title %}
     {{ request.path|split:"/"|slice:"1:2"|join:"" }}
 {% endblock title %}
+{% block buttons %}
+    {% if edit_url %}
+        <li>
+            <button>
+                <a class="contrast"
+                   href="{% if use_slug %}{% url edit_url object.slug %}{% else %}{% url edit_url object.pk %}{% endif %}">Edit</a>
+            </button>
+        </li>
+    {% endif %}
+    {% if delete_url %}
+        <li>
+            <button class="secondary">
+                <a class="contrast"
+                   href="{% if use_slug %}{% url delete_url object.slug %}{% else %}{% url delete_url object.pk %}{% endif %}">
+                    Eliminar
+                </a>
+            </button>
+        </li>
+    {% endif %}
+{% endblock buttons %}
 {% block content %}
-    {% block table_title %}
-        <section class="container">
-            <h1>{{ request.path|split:"/"|slice:"0:2"|join:"" }}</h1>
-        </section>
-    {% endblock table_title %}
     <section class="container">
         {% for field in model|get_model_fields %}
             <div>

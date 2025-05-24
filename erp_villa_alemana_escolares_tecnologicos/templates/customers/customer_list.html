@@ -1,1 +1,7 @@
 {% extends "_base_table.html" %}
+
+{% load model_utils %}
+
+{% block table_block %}
+    {% include "components/auto_table.html" with add_url="customers:customer-create" detail_url_name='customers:customer-detail' edit_url_name="customers:customer-update" object_list=object_list fields=model|get_model_fields %}
+{% endblock table_block %}

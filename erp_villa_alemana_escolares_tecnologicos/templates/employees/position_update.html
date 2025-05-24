@@ -1,7 +1,1 @@
 {% extends "_base_form.html" %}
-
-{% load strings %}
-
-{% block content %}
-    {% with title=request.path|split:"/"|join:" " %}{{ block.super }}{% endwith %}
-{% endblock content %}

@@ -6,12 +6,16 @@
 {% block title %}
     {{ request.path|split:"/"|slice:"1:2"|join:"" }}
 {% endblock title %}
+{% block buttons %}
+    {% if add_url %}
+        <li>
+            <button>
+                <a class="contrast" href="{% url add_url %}">Añadir</a>
+            </button>
+        </li>
+    {% endif %}
+{% endblock buttons %}
 {% block content %}
-    {% block table_title %}
-        <section class="container">
-            <h1>{{ request.path|split:"/"|slice:"0:2"|join:"" }}</h1>
-        </section>
-    {% endblock table_title %}
     {% block table_block %}
         {% include "components/auto_table.html" with object_list=object_list fields=model|get_model_fields %}
     {% endblock table_block %}

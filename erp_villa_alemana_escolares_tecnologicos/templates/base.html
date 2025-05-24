@@ -1,4 +1,4 @@
-{% load static i18n compress %}
+{% load static i18n compress strings %}
 
 <!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
@@ -12,7 +12,29 @@
       {% endblock title %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Behold My Awesome Project!" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent" />
+    <meta name="apple-mobile-web-app-title"
+          content="ERP Villa alemana Escolares Tecnologicos" />
+    <meta name="application-name"
+          content="ERP Villa alemana Escolares Tecnologicos" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage"
+          content="{% static 'images/favicons/mstile-144x144.png' %}" />
+    <meta name="msapplication-config"
+          content="{% static 'images/favicons/browserconfig.xml' %}" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title"
+          content="ERP Villa alemana Escolares Tecnologicos" />
+    <meta name="description" content="ERP Villa alemana Escolares Tecnologicos" />
+    <meta name="keywords" content="ERP Villa alemana Escolares Tecnologicos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="description" content="ERP Villa alemana Escolares Tecnologicos" />
     <meta name="author" content="Diego Rivera" />
     <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
     {% block css %}
@@ -22,35 +44,54 @@
         <link href="{% static 'css/project.css' %}" rel="stylesheet" />
       {% endcompress %}
     {% endblock css %}
-    <!-- Le javascript
-    ================================================== -->
-    {# Placed at the top of the document so pages load faster with defer #}
     {% block javascript %}
       {% compress js %}
         <script defer src="{% static 'js/project.js' %}"></script>
       {% endcompress %}
     {% endblock javascript %}
   </head>
-  <body class="{% block bodyclass %}{% endblock bodyclass %}">
+  <body>
     {% block header %}
       {% include "components/header.html" %}
     {% endblock header %}
     {% block body %}
-      <div class="container">
-        {% block main %}
-          <main class="container">
-            {% block content %}
-              <p>Use this document as a way to quick start any new project.</p>
-            {% endblock content %}
-          </main>
-        {% endblock main %}
-      </div>
+      {% block main %}
+        <main class="container">
+          {% block main_title %}
+            <section class="container">
+              {% with title=request.path|split:"/"|slice:"0:2"|join:"" %}
+                <h1>
+                  {% if title == "" %}
+                    ERP Villa Alemana
+                  {% else %}
+                    {{ request.path|split:"/"|slice:"0:2"|join:"" }}
+                  {% endif %}
+                </h1>
+              {% endwith %}
+            </section>
+          {% endblock main_title %}
+          {% block button_block %}
+            <header class="container">
+              <nav>
+                <ul class="nav-list">
+                  <li>
+                    <button onclick="history.back()" class="active">Atras</button>
+                  </li>
+                  {% block buttons %}
+                  {% endblock buttons %}
+                </ul>
+              </nav>
+            </header>
+          {% endblock button_block %}
+          {% block content %}
+            <p>Use this document as a way to quick start any new project.</p>
+          {% endblock content %}
+        </main>
+      {% endblock main %}
     {% endblock body %}
     {% block footer %}
       {% include "components/footer.html" %}
     {% endblock footer %}
-    {% block modal %}
-    {% endblock modal %}
     {% block inline_javascript %}
     {% endblock inline_javascript %}
   </body>
