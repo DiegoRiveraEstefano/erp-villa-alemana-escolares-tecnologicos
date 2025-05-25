@@ -1,10 +1,15 @@
+{% load static %}
+
 <header class="container">
     <nav>
         <!-- Logo y marca -->
-        <div class="">
-            <a href="{% url 'home' %}" class="logo">
+        <div>
+            <a href="{% url 'home' %}" class="logo contrast">
                 <h1>
-                    <img src="/static/images/logo.png" height="50" width="50" alt="" />
+                    <img src="{% static 'img/logo.png' %}"
+                         height="50"
+                         width="50"
+                         alt="imagen logo" />
                     ERP Villa alemana
                 </h1>
                 <small>Gestion Empresarial</small>
@@ -12,30 +17,46 @@
         </div>
         <!-- Navegación principal -->
         <ul class="nav-list">
-            <li>
-                <a href="{% url 'warehouses:warehouse-list' %}" class="active">Bodegas</a>
-            </li>
-            <li>
-                <a href="{% url 'stores:store-list' %}" class="active">Tiendas</a>
-            </li>
-            <li>
-                <a href="{% url 'employees:employee-list' %}" class="active">Empleados</a>
-            </li>
-            <li>
-                <a href="{% url 'products:product-list' %}" class="active">Productos</a>
-            </li>
-            <li>
-                <a href="{% url 'customers:customer-list' %}" class="active">Clientes</a>
-            </li>
-            <li>
-                <a href="{% url 'sales:sale-list' %}" class="active">Ventas</a>
-            </li>
-            <li>
-                <a href="{% url 'address:address-list' %}" class="active">Direcciones</a>
-            </li>
-            <li>
-                <a href="{% url 'audits:list' %}" class="active">Logs</a>
-            </li>
+            {% if warehouses.can_view_warehouse %}
+                <li>
+                    <a href="{% url 'warehouses:warehouse-list' %}" class="active">Bodegas</a>
+                </li>
+            {% endif %}
+            {% if stores.can_view_store %}
+                <li>
+                    <a href="{% url 'stores:store-list' %}" class="active">Tiendas</a>
+                </li>
+            {% endif %}
+            {% if employees.can_view_employee %}
+                <li>
+                    <a href="{% url 'employees:employee-list' %}" class="active">Empleados</a>
+                </li>
+            {% endif %}
+            {% if products.can_view_product %}
+                <li>
+                    <a href="{% url 'products:product-list' %}" class="active">Productos</a>
+                </li>
+            {% endif %}
+            {% if customers.can_view_customer %}
+                <li>
+                    <a href="{% url 'customers:customer-list' %}" class="active">Clientes</a>
+                </li>
+            {% endif %}
+            {% if sales.can_view_sale %}
+                <li>
+                    <a href="{% url 'sales:sale-list' %}" class="active">Ventas</a>
+                </li>
+            {% endif %}
+            {% if addresses.can_view_address %}
+                <li>
+                    <a href="{% url 'address:address-list' %}" class="active">Direcciones</a>
+                </li>
+            {% endif %}
+            {% if auditlog.view_logentry %}
+                <li>
+                    <a href="{% url 'audits:list' %}" class="active">Logs</a>
+                </li>
+            {% endif %}
         </ul>
     </nav>
 </header>

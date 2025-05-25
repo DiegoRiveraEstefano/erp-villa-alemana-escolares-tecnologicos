@@ -1,0 +1,114 @@
+[
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": true,
+            "username": "admin1",
+            "email": "admin1@empresa.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-01-01T00:00:00Z",
+            "groups": [
+                "admin"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "gerente1",
+            "email": "gerente1@empresa.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-03-15T00:00:00Z",
+            "groups": [
+                "management"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "ventas1",
+            "email": "ventas1@empresa.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-10T00:00:00Z",
+            "groups": [
+                "sales"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "bodega1",
+            "email": "bodega1@empresa.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-11-22T00:00:00Z",
+            "groups": [
+                "warehouse"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "soporte1",
+            "email": "soporte1@empresa.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-02-14T00:00:00Z",
+            "groups": [
+                "support"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "contabilidad1",
+            "email": "contabilidad1@empresa.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-08-05T00:00:00Z",
+            "groups": [
+                "finance"
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "password123",
+            "is_superuser": false,
+            "username": "ti1",
+            "email": "ti1@empresa.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-07-30T00:00:00Z",
+            "groups": [
+                "it"
+            ],
+            "user_permissions": []
+        }
+    }
+]

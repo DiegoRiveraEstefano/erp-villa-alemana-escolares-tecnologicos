@@ -1,0 +1,92 @@
+[
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 1,
+        "fields": {
+            "name": "test position",
+            "slug": "test-position",
+            "description": "test department"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 2,
+        "fields": {
+            "name": "Administración",
+            "slug": "ADM",
+            "description": "Administración"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 3,
+        "fields": {
+            "name": "Contabilidad",
+            "slug": "CONT",
+            "description": "Contabilidad"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 4,
+        "fields": {
+            "name": "Recursos Humanos",
+            "slug": "RRHH",
+            "description": "Recursos Humanos"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 5,
+        "fields": {
+            "name": "Tecnología",
+            "slug": "TEC",
+            "description": "Tecnología"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 6,
+        "fields": {
+            "name": "Mantenimiento",
+            "slug": "MANT",
+            "description": "Mantenimiento"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 7,
+        "fields": {
+            "name": "Auditoría",
+            "slug": "AUD",
+            "description": "Auditoría"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 8,
+        "fields": {
+            "name": "Bodega",
+            "slug": "BODE",
+            "description": "Bodega"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 9,
+        "fields": {
+            "name": "QA Engineer",
+            "slug": "QA",
+            "description": "QA Engineer"
+        }
+    },
+    {
+        "model": "employees.EmployeePosition",
+        "pk": 9,
+        "fields": {
+            "name": "Marketing",
+            "slug": "MKT",
+            "description": "Marketing"
+        }
+    }
+]

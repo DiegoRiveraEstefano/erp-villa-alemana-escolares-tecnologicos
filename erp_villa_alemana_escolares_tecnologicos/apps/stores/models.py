@@ -145,6 +145,7 @@ class StoreEmployee(models.Model):
             ("can_view_store_employee", _("Can view store employee")),
             ("can_edit_store_employee", _("Can edit store employee")),
             ("can_delete_store_employee", _("Can delete store employee")),
+            ("can_add_store_employee", _("Can add store employee")),
         ]
 
     def __str__(self):

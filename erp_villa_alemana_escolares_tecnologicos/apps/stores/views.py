@@ -1,4 +1,6 @@
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from django.views.generic import DetailView
@@ -15,41 +17,44 @@ from .models import Store
 from .models import StoreEmployee
 
 
-class StoreDetailView(ModelContextMixin, DetailView):
+class StoreDetailView(ModelContextMixin, PermissionRequiredMixin, DetailView):
     model = Store
     template_name = "stores/store_detail.html"
     slug_field = "slug"
     slug_url_kwarg = "store_slug"
     context_object_name = "store"
+    permission_required = "stores.can_view_store"
+    permission_denied_message = _("permission denied")
 
 
 store_detail_view = StoreDetailView.as_view()
 
 
-class StoreListView(ModelContextMixin, ListView):
+class StoreListView(ModelContextMixin, PermissionRequiredMixin, ListView):
     model = Store
     template_name = "stores/store_list.html"
     context_object_name = "store"
-
-    def get_queryset(self):
-        return super().get_queryset()
+    permission_required = "stores.can_view_store"
+    permission_denied_message = _("permission denied")
 
 
 store_list_view = StoreListView.as_view()
 
 
-class StoreCreateView(CreateView):
+class StoreCreateView(PermissionRequiredMixin, CreateView):
     model = Store
     template_name = "stores/store_create.html"
     form_class = StoreCreateForm
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
+    permission_required = "stores.can_add_store"
+    permission_denied_message = _("permission denied")
 
 
 store_create_view = StoreCreateView.as_view()
 
 
-class StoreUpdateView(UpdateView):
+class StoreUpdateView(PermissionRequiredMixin, UpdateView):
     model = Store
     template_name = "stores/store_update.html"
     form_class = StoreUpdateForm
@@ -57,6 +62,8 @@ class StoreUpdateView(UpdateView):
     context_object_name = "store"
     slug_field = "slug"
     slug_url_kwarg = "store_slug"
+    permission_required = "stores.can_edit_store"
+    permission_denied_message = _("permission denied")
 
 
 store_update_view = StoreUpdateView.as_view()

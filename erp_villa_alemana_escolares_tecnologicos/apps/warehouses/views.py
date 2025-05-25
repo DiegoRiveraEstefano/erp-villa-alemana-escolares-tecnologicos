@@ -20,7 +20,7 @@ from .models import WarehouseInventory
 
 class WarehouseDetailView(ModelContextMixin, DetailView):
     model = Warehouse
-    template_name = "warehouse/warehouse_detail.html"
+    template_name = "warehouses/warehouse_detail.html"
     slug_field = "slug"
     slug_url_kwarg = "warehouse_slug"
     context_object_name = "warehouse"
@@ -31,7 +31,7 @@ warehouse_detail_view = WarehouseDetailView.as_view()
 
 class WarehouseListView(ModelContextMixin, ListView):
     model = Warehouse
-    template_name = "warehouse/warehouse_list.html"
+    template_name = "warehouses/warehouse_list.html"
     context_object_name = "warehouse"
 
     def get_queryset(self):
@@ -43,9 +43,9 @@ warehouse_list_view = WarehouseListView.as_view()
 
 class WarehouseCreateView(CreateView):
     model = Warehouse
-    template_name = "warehouse/warehouse_create.html"
+    template_name = "warehouses/warehouse_create.html"
     form_class = WarehouseCreateForm
-    success_url = reverse_lazy("warehouse:warehouse-list")
+    success_url = reverse_lazy("warehouses:warehouse-list")
     context_object_name = "warehouse"
 
 
@@ -54,9 +54,9 @@ warehouse_create_view = WarehouseCreateView.as_view()
 
 class WarehouseUpdateView(UpdateView):
     model = Warehouse
-    template_name = "warehouse/warehouse_update.html"
+    template_name = "warehouses/warehouse_update.html"
     form_class = WarehouseUpdateForm
-    success_url = reverse_lazy("warehouse:warehouse-list")
+    success_url = reverse_lazy("warehouses:warehouse-list")
     context_object_name = "warehouse"
     slug_field = "slug"
     slug_url_kwarg = "warehouse_slug"
@@ -67,7 +67,7 @@ warehouse_update_view = WarehouseUpdateView.as_view()
 
 class WarehouseDeleteView(DeleteView):
     model = Warehouse
-    template_name = "warehouse/warehouse_delete.html"
+    template_name = "warehouses/warehouse_delete.html"
     success_url = reverse_lazy("warehouse:warehouse-list")
     context_object_name = "warehouse"
     slug_field = "slug"

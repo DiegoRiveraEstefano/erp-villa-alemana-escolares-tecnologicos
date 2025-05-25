@@ -1,3 +1,5 @@
+from django.core.validators import MaxValueValidator
+from django.core.validators import MinValueValidator
 from django.db import models
 from django.urls import reverse
 
@@ -50,6 +52,7 @@ class EmployeeDepartment(models.Model):
             ("can_view_department", "Can view department"),
             ("can_edit_department", "Can edit department"),
             ("can_delete_department", "Can delete department"),
+            ("can_add_department", "Can add department"),
         ]
 
     def __str__(self):
@@ -111,6 +114,7 @@ class EmployeePosition(models.Model):
             ("can_view_position", "Can view position"),
             ("can_edit_position", "Can edit position"),
             ("can_delete_position", "Can delete position"),
+            ("can_add_position", "Can add position"),
         ]
 
     def __str__(self):
@@ -131,6 +135,13 @@ class Employee(Person):
     Model representing an employee.
     """
 
+    user = models.OneToOneField(
+        "users.User",
+        on_delete=models.CASCADE,
+        related_name="employee",
+        verbose_name="User",
+        help_text="The user associated with the employee.",
+    )
     department = models.ForeignKey(
         EmployeeDepartment,
         on_delete=models.CASCADE,
@@ -150,17 +161,15 @@ class Employee(Person):
         help_text="The date the employee was hired.",
     )
 
-    is_active = models.BooleanField(
-        default=True,
-        verbose_name="Is Active",
-        help_text="Indicates if the employee is currently active.",
-    )
-
     salary = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         verbose_name="Salary",
         help_text="The salary of the employee.",
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(9999999.99),
+        ],
     )
 
     class Meta:
@@ -182,6 +191,7 @@ class Employee(Person):
             ("can_view_employee", "Can view employee"),
             ("can_edit_employee", "Can edit employee"),
             ("can_delete_employee", "Can delete employee"),
+            ("can_add_employee", "Can add employee"),
         ]
 
     def __str__(self):

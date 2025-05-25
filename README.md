@@ -1,57 +1,100 @@
-# ERP Villa alemana Escolares Tecnologicos
+# ERP Villa Alemana Escolares Tecnológicos
 
-Behold My Awesome Project!
+Sistema de gestión integral para PYME de artículos escolares y tecnológicos.  
+![Logo Conceptual](https://via.placeholder.com/100x30/2A4F7A/FFFFFF?text=ERP+Villa+Alemana)  
 
-[![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+## 🛠️ Herramientas Principales
+- **Frontend**: PicoCSS (Enfoque minimalista)
+- **Backend**: Python 3.10 + Django 4.2
+- **Base de Datos**: PostgreSQL
+- **Auditoría**: django-auditlog
+- **Admin Moderno**: django-jet-reboot
+- **Gestión de Archivos**: whitenoise
 
-License: MIT
+**Licencia**: [MIT](LICENSE)
 
-## Settings
+---
 
-Moved to [settings](https://cookiecutter-django.readthedocs.io/en/latest/1-getting-started/settings.html).
+## 🚀 Configuración Inicial
 
-## Basic Commands
+### Requisitos
+- Python 3.10+
+- PostgreSQL 14+
+- Virtualenv
 
-### Setting Up Your Users
+### Instalación
+1. Clonar repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/erp-villa-alemana.git
+   cd erp-villa-alemana
+   ```
 
-- To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
+2. Crear entorno virtual:
+```bash
+virtualenv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate    # Windows
+```
 
-- To create a **superuser account**, use this command:
+3. Instalar dependencias:
+```bash
+pip install -r requirements.txt
+```
+4. Configurar variables de entorno en .env:
+```ini
+SECRET_KEY=tu_clave_secreta
+DATABASE_URL=postgres://user:password@localhost:5432/erp_db
+DEBUG=True
+```   
+## Comandos Básicos
 
-      $ python manage.py createsuperuser
+### Ejecutar Servidor de Desarrollo
+```bash
+python manage.py runserver
+```
+### Crear Superusuario
+```bash
+python manage.py createsuperuser
+```
+### Tipado Estático (mypy)
+```bash
+mypy erp_villa_alemana_escolares_tecnologicos
+```
+### Ejecutar Tests
+```bash
+pytest --cov=.
+```
 
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
+---
 
-### Type checks
+## 🔐 Modelo de Permisos
 
-Running type checks with mypy:
+### Roles Predefinidos
 
-    $ mypy erp_villa_alemana_escolares_tecnologicos
+|Rol|Slug|Descripción|
+|---|---|---|
+|Administrador|`admin`|Acceso total al sistema|
+|Bodeguero|`warehouse`|Gestión de inventario|
+|Ventas|`sales`|Registro de clientes y transacciones|
+|Soporte|`support`|Edición limitada de datos de clientes|
+|Contabilidad|`finance`|Acceso de solo lectura a datos financieros|
 
-### Test coverage
+---
 
-To run the tests, check your test coverage, and generate an HTML coverage report:
+## 🤝 Contribuir
 
-    $ coverage run -m pytest
-    $ coverage html
-    $ open htmlcov/index.html
+1. Hacer fork del proyecto
+    
+2. Crear rama: `git checkout -b feature/nueva-funcionalidad`
+    
+3. Commit: `git commit -m 'Agrega algo increíble'`
+    
+4. Push: `git push origin feature/nueva-funcionalidad`
+    
+5. Abrir Pull Request
 
-#### Running tests with pytest
+---
 
-    $ pytest
+## 📬 Soporte
 
-### Live reloading and Sass CSS compilation
-
-Moved to [Live reloading and SASS compilation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally.html#using-webpack-or-gulp).
-
-### Sentry
-
-Sentry is an error logging aggregator service. You can sign up for a free account at <https://sentry.io/signup/?code=cookiecutter> or download and host it yourself.
-The system is set up with reasonable defaults, including 404 logging and integration with the WSGI application.
-
-You must set the DSN url in production.
-
-## Deployment
-
-The following details how to deploy this application.
+¿Problemas? Abre un [issue](https://github.com/tu-usuario/erp-villa-alemana/issues)

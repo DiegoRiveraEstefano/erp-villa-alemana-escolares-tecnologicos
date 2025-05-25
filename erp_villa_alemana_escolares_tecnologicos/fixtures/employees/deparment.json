@@ -1,0 +1,92 @@
+[
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 1,
+        "fields": {
+            "name": "test department",
+            "slug": "test-department",
+            "description": "test department"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 2,
+        "fields": {
+            "name": "Administración",
+            "slug": "ADM",
+            "description": "Administración"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 3,
+        "fields": {
+            "name": "Contabilidad",
+            "slug": "CONT",
+            "description": "Contabilidad"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 4,
+        "fields": {
+            "name": "Recursos Humanos",
+            "slug": "RRHH",
+            "description": "Recursos Humanos"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 5,
+        "fields": {
+            "name": "Tecnología",
+            "slug": "TEC",
+            "description": "Tecnología"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 6,
+        "fields": {
+            "name": "Mantenimiento",
+            "slug": "MANT",
+            "description": "Mantenimiento"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 7,
+        "fields": {
+            "name": "Auditoría",
+            "slug": "",
+            "description": ""
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 8,
+        "fields": {
+            "name": "Compras/Procurement",
+            "slug": "purchasing",
+            "description": "Compras/Procurement"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 9,
+        "fields": {
+            "name": "Ventas/Sales",
+            "slug": "sales",
+            "description": "Ventas/Sales"
+        }
+    },
+    {
+        "model": "employees.EmployeeDepartment",
+        "pk": 10,
+        "fields": {
+            "name": "Logística/Logistics",
+            "slug": "",
+            "description": ""
+        }
+    }
+]

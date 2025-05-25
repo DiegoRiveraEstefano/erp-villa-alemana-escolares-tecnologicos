@@ -68,6 +68,7 @@ class Region(models.Model):
             ),
         ]
         permissions = [
+            ("can_add_region", "Can add region"),
             ("can_view_region", "Can view region"),
             ("can_edit_region", "Can edit region"),
             ("can_delete_region", "Can delete region"),
@@ -150,6 +151,7 @@ class Province(models.Model):
             ("can_view_province", "Can view province"),
             ("can_edit_province", "Can edit province"),
             ("can_delete_province", "Can delete province"),
+            ("can_add_province", "Can add province"),
         ]
 
     def __str__(self):
@@ -228,6 +230,7 @@ class Comuna(models.Model):
             ("can_view_comuna", "Can view comuna"),
             ("can_edit_comuna", "Can edit comuna"),
             ("can_delete_comuna", "Can delete comuna"),
+            ("can_add_comuna", "Can add comuna"),
         ]
 
     def __str__(self):
@@ -307,6 +310,7 @@ class Address(models.Model):
             ("can_view_address", "Can view address"),
             ("can_edit_address", "Can edit address"),
             ("can_delete_address", "Can delete address"),
+            ("can_add_address", "Can add address"),
         ]
 
     def __str__(self):

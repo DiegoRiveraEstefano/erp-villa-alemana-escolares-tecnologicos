@@ -47,6 +47,7 @@ class Customer(Person):
             ("can_view_customer", "Can view customer"),
             ("can_edit_customer", "Can edit customer"),
             ("can_delete_customer", "Can delete customer"),
+            ("can_add_customer", "Can add customer"),
         ]
 
     def __str__(self):

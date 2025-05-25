@@ -1,3 +1,6 @@
+from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from django.views.generic import DetailView
@@ -11,48 +14,62 @@ from .forms import CustomerUpdateForm
 from .models import Customer
 
 
-class CustomerDetailView(ModelContextMixin, DetailView):
+class CustomerDetailView(ModelContextMixin, PermissionRequiredMixin, DetailView):
     model = Customer
     template_name = "customers/customer_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
+    context_object_name = "customer"
+    permission_required = "customers.can_view_customer"
+    permission_denied_message = _("permission denied")
 
 
 customer_detail_view = CustomerDetailView.as_view()
 
 
-class CustomerListView(ModelContextMixin, ListView):
+class CustomerListView(ModelContextMixin, PermissionRequiredMixin, ListView):
     model = Customer
     template_name = "customers/customer_list.html"
-
-    def get_queryset(self):
-        return super().get_queryset()
+    context_object_name = "customers"
+    permission_required = "customers.can_view_customer"
+    permission_denied_message = _("permission denied")
 
 
 customer_list_view = CustomerListView.as_view()
 
 
-class CustomerCreateView(CreateView):
+class CustomerCreateView(PermissionRequiredMixin, CreateView):
     model = Customer
     template_name = "customers/customer_create.html"
     form_class = CustomerCreateForm
+    success_url = reverse_lazy("customers:customer-list")
+    context_object_name = "customer"
+    permission_required = "customers.can_add_customer"
 
 
 customer_create_view = CustomerCreateView.as_view()
 
 
-class CustomerUpdateView(UpdateView):
+class CustomerUpdateView(PermissionRequiredMixin, UpdateView):
     model = Customer
     template_name = "customers/customer_update.html"
     form_class = CustomerUpdateForm
+    success_url = reverse_lazy("customers:customer-list")
+    context_object_name = "customer"
+    permission_required = "customers.can_change_customer"
+    permission_denied_message = _("permission denied")
 
 
 customer_update_view = CustomerUpdateView.as_view()
 
 
-class CustomerDeleteView(DeleteView):
+class CustomerDeleteView(PermissionRequiredMixin, DeleteView):
     model = Customer
     template_name = "customers/customer_delete.html"
+    success_url = reverse_lazy("customers:customer-list")
+    context_object_name = "customer"
+    permission_required = "customers.can_delete_customer"
+    permission_denied_message = _("permission denied")
 
 
 customer_delete_view = CustomerDeleteView.as_view()

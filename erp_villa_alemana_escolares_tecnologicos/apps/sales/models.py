@@ -1,3 +1,5 @@
+from django.core.validators import MaxValueValidator
+from django.core.validators import MinValueValidator
 from django.db import models
 from django.urls import reverse
 from django.utils.functional import cached_property
@@ -43,6 +45,10 @@ class Sale(models.Model):
         decimal_places=2,
         verbose_name=_("Price"),
         help_text=_("The price of the product."),
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(9999999.99),
+        ],
     )
 
     payment_method = models.CharField(
@@ -90,9 +96,10 @@ class Sale(models.Model):
             ),
         ]
         permissions = [
-            ("can_view_sale", "Can view sale"),
-            ("can_edit_sale", "Can edit sale"),
-            ("can_delete_sale", "Can delete sale"),
+            ("can_view_sale", _("Can view sale")),
+            ("can_edit_sale", _("Can edit sale")),
+            ("can_delete_sale", _("Can delete sale")),
+            ("can_add_sale", _("Can add sale")),
         ]
 
     def __str__(self):
@@ -130,6 +137,10 @@ class SaleItem(models.Model):
     quantity = models.PositiveIntegerField(
         verbose_name=_("Quantity"),
         help_text=_("The quantity of the product sold."),
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(99),
+        ],
     )
 
     class Meta:
@@ -156,6 +167,7 @@ class SaleItem(models.Model):
             ("can_view_sale_item", "Can view sale item"),
             ("can_edit_sale_item", "Can edit sale item"),
             ("can_delete_sale_item", "Can delete sale item"),
+            ("can_add_sale_item", "Can add sale item"),
         ]
 
     def __str__(self):

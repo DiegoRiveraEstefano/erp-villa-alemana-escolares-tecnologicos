@@ -1,3 +1,5 @@
+from django.core.validators import MaxValueValidator
+from django.core.validators import MinValueValidator
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -45,6 +47,7 @@ class ProductCategory(models.Model):
             ("can_view_product_category", "Can view product category"),
             ("can_edit_product_category", "Can edit product category"),
             ("can_delete_product_category", "Can delete product category"),
+            ("can_add_product_category", "Can add product category"),
         ]
 
     def __str__(self):
@@ -93,6 +96,10 @@ class Product(models.Model):
         decimal_places=2,
         verbose_name=_("Product Price"),
         help_text=_("The price of the product."),
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(9999999.99),
+        ],
     )
     category = models.ForeignKey(
         ProductCategory,
@@ -125,6 +132,7 @@ class Product(models.Model):
             ("can_view_product", "Can view product"),
             ("can_edit_product", "Can edit product"),
             ("can_delete_product", "Can delete product"),
+            ("can_add_product", "Can add product"),
         ]
 
     def __str__(self):

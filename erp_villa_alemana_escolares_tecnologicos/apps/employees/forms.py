@@ -24,18 +24,24 @@ class EmployeeCreateForm(forms.ModelForm):
         help_text=_("The position associated with the employee."),
     )
 
+    user__is_active = forms.BooleanField(
+        required=False,
+        label=_("User is active"),
+        help_text=_("Indicates if the user account is active."),
+    )
+
     class Meta:
         model = Employee
         fields = (
             "department",
             "position",
             "hire_date",
-            "is_active",
             "salary",
             "first_name",
             "last_name",
             "email",
             "phone_number",
+            "user__is_active",
         )
 
 
@@ -59,7 +65,6 @@ class EmployeeUpdateForm(forms.ModelForm):
             "department",
             "position",
             "hire_date",
-            "is_active",
             "salary",
             "first_name",
             "last_name",

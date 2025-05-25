@@ -1,0 +1,296 @@
+[
+    {
+        "name": "Administrador",
+        "slug": "admin",
+        "description": "Acceso completo a todos los modelos y funciones del sistema.",
+        "permissions": [
+            "can_add_address",
+            "can_delete_address",
+            "can_edit_address",
+            "can_view_address",
+            "can_add_comuna",
+            "can_delete_comuna",
+            "can_edit_comuna",
+            "can_view_comuna",
+            "can_add_province",
+            "can_delete_province",
+            "can_edit_province",
+            "can_view_province",
+            "can_add_region",
+            "can_delete_region",
+            "can_edit_region",
+            "can_view_region",
+            "view_region",
+            "add_logentry",
+            "change_logentry",
+            "delete_logentry",
+            "view_logentry",
+            "can_add_customer",
+            "can_delete_customer",
+            "can_edit_customer",
+            "can_view_customer",
+            "can_add_employee",
+            "can_delete_employee",
+            "can_edit_employee",
+            "can_view_employee",
+            "can_add_department",
+            "can_delete_department",
+            "can_edit_department",
+            "can_view_department",
+            "can_add_position",
+            "can_delete_position",
+            "can_edit_position",
+            "can_view_position",
+            "add_groupobjectpermission",
+            "change_groupobjectpermission",
+            "delete_groupobjectpermission",
+            "view_groupobjectpermission",
+            "add_userobjectpermission",
+            "change_userobjectpermission",
+            "delete_userobjectpermission",
+            "view_userobjectpermission",
+            "can_add_product",
+            "can_delete_product",
+            "can_edit_product",
+            "can_view_product",
+            "can_add_product_category",
+            "can_delete_product_category",
+            "can_edit_product_category",
+            "can_view_product_category",
+            "can_add_sale",
+            "can_delete_sale",
+            "can_edit_sale",
+            "can_view_sale",
+            "can_add_sale_item",
+            "can_delete_sale_item",
+            "can_edit_sale_item",
+            "can_view_sale_item",
+            "can_delete_store",
+            "can_edit_store",
+            "can_view_store",
+            "can_add_store_employee",
+            "can_delete_store_employee",
+            "can_edit_store_employee",
+            "can_view_store_employee",
+            "add_user",
+            "change_user",
+            "delete_user",
+            "view_user",
+            "add_usergroup",
+            "change_usergroup",
+            "delete_usergroup",
+            "view_usergroup",
+            "can_add_warehouse",
+            "can_delete_warehouse",
+            "can_edit_warehouse",
+            "can_view_warehouse",
+            "can_add_warehouse_employee",
+            "can_delete_warehouse_employee",
+            "can_edit_warehouse_employee",
+            "can_view_warehouse_employee",
+            "can_add_warehouse_inventory",
+            "can_delete_warehouse_inventory",
+            "can_edit_warehouse_inventory",
+            "can_view_warehouse_inventory"
+        ]
+    },
+    {
+        "name": "Gerente General",
+        "slug": "management",
+        "description": "Acceso de solo lectura a datos estratégicos (ventas, inventario, clientes).",
+        "permissions": [
+            "can_view_address",
+            "can_view_comuna",
+            "can_view_province",
+            "can_view_region",
+            "can_view_customer",
+            "can_view_employee",
+            "can_view_department",
+            "can_view_position",
+            "can_view_product",
+            "can_view_product_category",
+            "can_view_sale",
+            "can_view_sale_item",
+            "can_view_store",
+            "can_view_store_employee",
+            "can_view_warehouse",
+            "can_view_warehouse_employee",
+            "can_view_warehouse_inventory",
+            "view_user",
+            "view_usergroup",
+            "view_logentry"
+        ]
+    },
+    {
+        "name": "Ventas",
+        "slug": "sales",
+        "description": "Gestionar clientes, ventas y productos (sin acceso a eliminación de registros críticos).",
+        "permissions": [
+            "can_add_customer",
+            "can_edit_customer",
+            "can_view_customer",
+            "can_add_sale",
+            "can_edit_sale",
+            "can_view_sale",
+            "can_add_sale_item",
+            "can_edit_sale_item",
+            "can_view_sale_item",
+            "can_view_product",
+            "can_view_product_category",
+            "can_view_store"
+        ]
+    },
+    {
+        "name": "Bodeguero",
+        "slug": "warehouse",
+        "description": "Gestionar inventario, traslados y stock en bodegas.",
+        "permissions": [
+            "can_add_warehouse_inventory",
+            "can_edit_warehouse_inventory",
+            "can_view_warehouse_inventory",
+            "can_view_warehouse",
+            "can_view_product",
+            "can_view_product_category"
+        ]
+    },
+    {
+        "name": "Soporte Clientes",
+        "slug": "support",
+        "description": "Consultar y editar información de clientes y ventas (sin eliminar datos).",
+        "permissions": [
+            "can_view_customer",
+            "can_edit_customer",
+            "can_view_sale",
+            "can_view_sale_item",
+            "can_view_product"
+        ]
+    },
+    {
+        "name": "Contabilidad",
+        "slug": "finance",
+        "description": "Acceso de solo lectura a datos financieros (ventas, inventario, clientes).",
+        "permissions": [
+            "can_view_sale",
+            "can_view_sale_item",
+            "can_view_product",
+            "can_view_product_category",
+            "can_view_customer",
+            "can_view_warehouse_inventory"
+        ]
+    },
+    {
+        "name": "TI",
+        "slug": "it",
+        "description": "Gestionar usuarios, permisos, auditorías y integraciones técnicas.",
+        "permissions": [
+            "add_user",
+            "change_user",
+            "delete_user",
+            "view_user",
+            "add_usergroup",
+            "change_usergroup",
+            "delete_usergroup",
+            "view_usergroup",
+            "add_logentry",
+            "change_logentry",
+            "delete_logentry",
+            "view_logentry",
+            "add_groupobjectpermission",
+            "change_groupobjectpermission",
+            "delete_groupobjectpermission",
+            "view_groupobjectpermission",
+            "add_userobjectpermission",
+            "change_userobjectpermission",
+            "delete_userobjectpermission",
+            "view_userobjectpermission"
+        ]
+    },
+    {
+        "name": "Compras/Procurement",
+        "slug": "purchasing",
+        "description": "Gestionar reposición de inventario y relaciones con proveedores.",
+        "permissions": [
+            "can_add_warehouse_inventory",
+            "can_edit_warehouse_inventory",
+            "can_view_warehouse_inventory",
+            "can_view_product",
+            "can_view_product_category",
+            "can_view_sale_item"
+        ]
+    },
+    {
+        "name": "Marketing",
+        "slug": "marketing",
+        "description": "Acceso a datos de clientes y ventas para análisis de mercado (sin modificar precios o costos).",
+        "permissions": [
+            "can_view_customer",
+            "can_view_sale",
+            "can_view_sale_item",
+            "can_view_product",
+            "can_view_store"
+        ]
+    },
+    {
+        "name": "Jefe de Tienda",
+        "slug": "store_manager",
+        "description": "Gestionar empleados, ventas e inventario de una tienda específica.",
+        "permissions": [
+            "can_edit_store",
+            "can_view_store",
+            "can_add_store_employee",
+            "can_edit_store_employee",
+            "can_view_store_employee",
+            "can_add_sale",
+            "can_edit_sale",
+            "can_view_sale",
+            "can_view_warehouse_inventory"
+        ]
+    },
+    {
+        "name": "Logística",
+        "slug": "logistics",
+        "description": "Coordinar traslados entre bodegas y tiendas.",
+        "permissions": [
+            "can_edit_warehouse_inventory",
+            "can_view_warehouse_inventory",
+            "can_view_warehouse",
+            "can_view_store",
+            "can_view_product"
+        ]
+    },
+    {
+        "name": "Control de Calidad",
+        "slug": "quality_control",
+        "description": "Verificar y corregir datos de productos e inventario.",
+        "permissions": [
+            "can_edit_product",
+            "can_view_product",
+            "can_edit_warehouse_inventory",
+            "can_view_warehouse_inventory"
+        ]
+    },
+    {
+        "name": "Auditor Externo",
+        "slug": "auditor",
+        "description": "Acceso temporal de solo lectura para auditorías externas.",
+        "permissions": [
+            "can_view_customer",
+            "can_view_sale",
+            "can_view_sale_item",
+            "can_view_product",
+            "can_view_warehouse_inventory",
+            "view_logentry"
+        ]
+    },
+    {
+        "name": "Pasante",
+        "slug": "intern",
+        "description": "Acceso limitado para entrenamiento (solo visualización básica).",
+        "permissions": [
+            "can_view_product",
+            "can_view_customer",
+            "can_view_sale",
+            "can_view_store"
+        ]
+    }
+]

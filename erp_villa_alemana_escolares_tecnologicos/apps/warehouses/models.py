@@ -78,6 +78,7 @@ class Warehouse(models.Model):
             ("can_view_warehouse", "Can view warehouse"),
             ("can_edit_warehouse", "Can edit warehouse"),
             ("can_delete_warehouse", "Can delete warehouse"),
+            ("can_add_warehouse", "Can add warehouse"),
         ]
 
     def __str__(self):
@@ -138,6 +139,7 @@ class WarehouseInventory(models.Model):
             ("can_view_warehouse_inventory", "Can view warehouse inventory"),
             ("can_edit_warehouse_inventory", "Can edit warehouse inventory"),
             ("can_delete_warehouse_inventory", "Can delete warehouse inventory"),
+            ("can_add_warehouse_inventory", "Can add warehouse inventory"),
         ]
 
     def __str__(self):
@@ -203,6 +205,7 @@ class WarehouseEmployee(models.Model):
             ("can_view_warehouse_employee", "Can view warehouse employee"),
             ("can_edit_warehouse_employee", "Can edit warehouse employee"),
             ("can_delete_warehouse_employee", "Can delete warehouse employee"),
+            ("can_add_warehouse_employee", "Can add warehouse employee"),
         ]
 
     def __str__(self):
