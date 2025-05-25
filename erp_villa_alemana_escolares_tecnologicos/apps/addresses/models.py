@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -318,3 +319,6 @@ class Address(models.Model):
 
     def get_absolute_url(self):
         return reverse("addresses:detail", kwargs={"pk": self.pk})
+
+
+auditlog.register(Address)

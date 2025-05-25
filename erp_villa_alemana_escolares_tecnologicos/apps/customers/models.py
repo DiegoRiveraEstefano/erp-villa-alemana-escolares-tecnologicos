@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -61,3 +62,6 @@ class Customer(Person):
             "customers:customer-detail",
             kwargs={"pk": self.pk},
         )
+
+
+auditlog.register(Customer)

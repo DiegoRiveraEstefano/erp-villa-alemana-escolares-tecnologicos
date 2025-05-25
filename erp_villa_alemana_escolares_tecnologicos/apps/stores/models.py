@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -158,3 +159,7 @@ class StoreEmployee(models.Model):
         Returns the URL to access a particular store employee instance.
         """
         return reverse("stores:employee-detail", kwargs={"pk": self.pk})
+
+
+auditlog.register(Store)
+auditlog.register(StoreEmployee)

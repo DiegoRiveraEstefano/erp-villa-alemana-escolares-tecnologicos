@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.core.validators import MaxValueValidator
 from django.core.validators import MinValueValidator
 from django.db import models
@@ -188,3 +189,7 @@ class SaleItem(models.Model):
         Returns the total price of the sale item.
         """
         return self.product.price * self.quantity
+
+
+auditlog.register(Sale)
+auditlog.register(SaleItem)

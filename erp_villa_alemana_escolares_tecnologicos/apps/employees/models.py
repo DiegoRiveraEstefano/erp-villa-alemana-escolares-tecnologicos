@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.core.validators import MaxValueValidator
 from django.core.validators import MinValueValidator
 from django.db import models
@@ -205,3 +206,8 @@ class Employee(Person):
             "employees:detail",
             kwargs={"pk": self.pk},
         )
+
+
+auditlog.register(Employee)
+auditlog.register(EmployeeDepartment)
+auditlog.register(EmployeePosition)

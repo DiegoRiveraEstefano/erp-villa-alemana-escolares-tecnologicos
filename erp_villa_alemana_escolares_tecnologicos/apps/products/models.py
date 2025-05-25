@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.core.validators import MaxValueValidator
 from django.core.validators import MinValueValidator
 from django.db import models
@@ -149,3 +150,7 @@ class Product(models.Model):
             "products:product-detail",
             kwargs={"product_slug": self.slug},
         )
+
+
+auditlog.register(ProductCategory)
+auditlog.register(Product)

@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
@@ -152,8 +153,8 @@ class WarehouseInventory(models.Model):
         return reverse(
             "warehouses:inventory-detail",
             kwargs={
-                "product-slug": self.product.slug,
-                "warehouse-slug": self.warehouse.slug,
+                "product_slug": self.product.slug,
+                "warehouse_slug": self.warehouse.slug,
             },
         )
 
@@ -218,7 +219,12 @@ class WarehouseEmployee(models.Model):
         return reverse(
             "warehouses:employee-detail",
             kwargs={
-                "employee-pk": self.employee.pk,
-                "warehouse-slug": self.warehouse.slug,
+                "employee_pk": self.employee.pk,
+                "warehouse_slug": self.warehouse.slug,
             },
         )
+
+
+auditlog.register(Warehouse)
+auditlog.register(WarehouseInventory)
+auditlog.register(WarehouseEmployee)

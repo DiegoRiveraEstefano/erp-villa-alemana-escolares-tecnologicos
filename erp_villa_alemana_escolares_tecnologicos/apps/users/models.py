@@ -1,3 +1,4 @@
+from auditlog.registry import auditlog
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.models import Group as BaseGroup
 from django.db import models
@@ -75,3 +76,7 @@ class UserGroup(BaseGroup):
 
         """
         return reverse("users:group-detail", kwargs={"group_slug": self.slug})
+
+
+auditlog.register(User)
+auditlog.register(UserGroup)
