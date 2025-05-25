@@ -17,42 +17,42 @@
         </div>
         <!-- Navegación principal -->
         <ul class="nav-list">
-            {% if warehouses.can_view_warehouse %}
+            {% if perms.warehouses.can_view_warehouse %}
                 <li>
                     <a href="{% url 'warehouses:warehouse-list' %}" class="active">Bodegas</a>
                 </li>
             {% endif %}
-            {% if stores.can_view_store %}
+            {% if perms.stores.can_view_store %}
                 <li>
                     <a href="{% url 'stores:store-list' %}" class="active">Tiendas</a>
                 </li>
             {% endif %}
-            {% if employees.can_view_employee %}
+            {% if perms.employees.can_view_employee %}
                 <li>
                     <a href="{% url 'employees:employee-list' %}" class="active">Empleados</a>
                 </li>
             {% endif %}
-            {% if products.can_view_product %}
+            {% if perms.products.can_view_product %}
                 <li>
                     <a href="{% url 'products:product-list' %}" class="active">Productos</a>
                 </li>
             {% endif %}
-            {% if customers.can_view_customer %}
+            {% if perms.customers.can_view_customer %}
                 <li>
                     <a href="{% url 'customers:customer-list' %}" class="active">Clientes</a>
                 </li>
             {% endif %}
-            {% if sales.can_view_sale %}
+            {% if perms.sales.can_view_sale %}
                 <li>
                     <a href="{% url 'sales:sale-list' %}" class="active">Ventas</a>
                 </li>
             {% endif %}
-            {% if addresses.can_view_address %}
+            {% if perms.addresses.can_view_address %}
                 <li>
                     <a href="{% url 'address:address-list' %}" class="active">Direcciones</a>
                 </li>
             {% endif %}
-            {% if auditlog.view_logentry %}
+            {% if perms.auditlog.view_logentry %}
                 <li>
                     <a href="{% url 'audits:list' %}" class="active">Logs</a>
                 </li>
