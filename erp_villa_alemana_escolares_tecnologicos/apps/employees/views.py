@@ -160,7 +160,7 @@ class EmployeePositionDetailView(
     DetailView,
 ):
     model = EmployeePosition
-    template_name = "employee/position_detail.html"
+    template_name = "employees/position_detail.html"
     slug_field = "slug"
     slug_url_kwarg = "position_slug"
     context_object_name = "position"
@@ -173,7 +173,7 @@ employee_position_detail_view = EmployeePositionDetailView.as_view()
 
 class EmployeePositionListView(ModelContextMixin, PermissionRequiredMixin, ListView):
     model = EmployeePosition
-    template_name = "employee/position_list.html"
+    template_name = "employees/position_list.html"
     context_object_name = "positions"
     permission_required = "employees.can_view_employee_position"
     permission_denied_message = _("permission denied")
@@ -184,7 +184,7 @@ employee_position_list_view = EmployeePositionListView.as_view()
 
 class EmployeePositionCreateView(PermissionRequiredMixin, CreateView):
     model = EmployeePosition
-    template_name = "employee/position_create.html"
+    template_name = "employees/position_create.html"
     form_class = EmployeePositionCreateForm
     success_url = reverse_lazy("employees:position-list")
     permission_required = "employees.can_add_employee_position"
@@ -196,7 +196,7 @@ employee_position_create_view = EmployeePositionCreateView.as_view()
 
 class EmployeePositionUpdateView(PermissionRequiredMixin, UpdateView):
     model = EmployeePosition
-    template_name = "employee/position_update.html"
+    template_name = "employees/position_update.html"
     form_class = EmployeePositionUpdateForm
     slug_field = "slug"
     slug_url_kwarg = "position_slug"
@@ -210,7 +210,7 @@ employee_position_update_view = EmployeePositionUpdateView.as_view()
 
 class EmployeePositionDeleteView(PermissionRequiredMixin, DeleteView):
     model = EmployeePosition
-    template_name = "employee/position_delete.html"
+    template_name = "employees/position_delete.html"
     form_class = EmployeePositionDeleteForm
     slug_field = "slug"
     slug_url_kwarg = "position_slug"
