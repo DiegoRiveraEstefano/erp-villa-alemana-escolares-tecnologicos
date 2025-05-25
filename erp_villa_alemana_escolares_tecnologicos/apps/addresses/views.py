@@ -34,9 +34,6 @@ class AddressListView(ModelContextMixin, PermissionRequiredMixin, ListView):
     permission_required = "address.can_view_address"
     permission_denied_message = _("permission denied")
 
-    def get_queryset(self):
-        return super().get_queryset()
-
 
 address_list_view = AddressListView.as_view()
 

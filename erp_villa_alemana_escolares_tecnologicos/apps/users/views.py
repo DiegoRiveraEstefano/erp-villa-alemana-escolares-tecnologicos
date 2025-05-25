@@ -149,7 +149,7 @@ class UserLogOutView(FormView, LoginRequiredMixin, SuccessMessageMixin):
 user_log_out_view = UserLogOutView.as_view()
 
 
-class UserDetailView(LoginRequiredMixin, DetailView):
+class UserDetailView(LoginRequiredMixin, ModelContextMixin, DetailView):
     """User detail view.
 
     Description: This view is used to display the details of a user.
@@ -169,6 +169,7 @@ class UserDetailView(LoginRequiredMixin, DetailView):
     slug_field = "username"
     slug_url_kwarg = "username"
     template_name = "users/user_detail.html"
+    context_object_name = "user"
 
     def get_object(self):
         return self.request.user
