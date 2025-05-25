@@ -74,9 +74,11 @@
             <header class="container">
               <nav>
                 <ul class="nav-list">
-                  <li>
-                    <button onclick="history.back()" class="active">Atras</button>
-                  </li>
+                  {% if request.path|split:"/"|slice:"0:2"|join:"" != "" %}
+                    <li>
+                      <button onclick="history.back()" class="active">Atras</button>
+                    </li>
+                  {% endif %}
                   {% block buttons %}
                   {% endblock buttons %}
                 </ul>

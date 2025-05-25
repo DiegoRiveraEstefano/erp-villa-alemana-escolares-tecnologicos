@@ -43,7 +43,7 @@
                     {% elif field.get_internal_type == 'BooleanField' %}
                         {{ value|yesno:"Yes,No" }}
                     {% else %}
-                        {{ value|default:"-"|truncatechars:50 }}
+                        <p>{{ value|default:"-" }}</p>
                     {% endif %}
                 {% endwith %}
             </div>
