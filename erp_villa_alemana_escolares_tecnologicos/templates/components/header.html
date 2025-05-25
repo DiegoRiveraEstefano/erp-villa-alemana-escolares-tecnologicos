@@ -57,6 +57,11 @@
                     <a href="{% url 'audits:list' %}" class="active">Logs</a>
                 </li>
             {% endif %}
+            {% if user.is_staff %}
+                <li>
+                    <a href="{% url 'admin:index' %}" class="active">Admin</a>
+                </li>
+            {% endif %}
         </ul>
     </nav>
 </header>
