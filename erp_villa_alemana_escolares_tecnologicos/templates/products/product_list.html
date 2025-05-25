@@ -4,6 +4,11 @@
 
 {% block buttons %}
     {% with add_url="products:product-create" %}{{ block.super }}{% endwith %}
+    <li>
+        <button>
+            <a class="contrast" href="{% url 'products:category-list' %}">Categorias</a>
+        </button>
+    </li>
 {% endblock buttons %}
 {% block table_block %}
     {% include "components/auto_table.html" with detail_url_name='products:product-detail' edit_url_name="products:product-update" use_slug=True object_list=object_list fields=model|get_model_fields %}
