@@ -69,68 +69,81 @@ class StoreUpdateView(PermissionRequiredMixin, UpdateView):
 store_update_view = StoreUpdateView.as_view()
 
 
-class StoreDeleteView(DeleteView):
+class StoreDeleteView(PermissionRequiredMixin, DeleteView):
     model = Store
     template_name = "stores/store_delete.html"
     success_url = reverse_lazy("store:store-list")
     context_object_name = "store"
     slug_field = "slug"
     slug_url_kwarg = "store_slug"
+    permission_required = "stores.can_delete_store"
+    permission_denied_message = _("permission denied")
 
 
 store_delete_view = StoreDeleteView.as_view()
 
 
-class StoreEmployeeDetailView(ModelContextMixin, DetailView):
+class StoreEmployeeDetailView(ModelContextMixin, PermissionRequiredMixin, DetailView):
     model = StoreEmployee
     template_name = "stores/employee_detail.html"
     slug_field = "pk"
     slug_url_kwarg = "pk"
     context_object_name = "store_employee"
+    permission_required = "stores.can_view_store_employee"
+    permission_denied_message = _("permission denied")
 
 
 store_employee_detail_view = StoreEmployeeDetailView.as_view()
 
 
-class StoreEmployeeListView(ModelContextMixin, ListView):
+class StoreEmployeeListView(ModelContextMixin, PermissionRequiredMixin, ListView):
     model = StoreEmployee
     template_name = "stores/employee_list.html"
     context_object_name = "store_employee"
-
-    def get_queryset(self):
-        return super().get_queryset()
+    permission_required = "stores.can_view_store_employee"
+    permission_denied_message = _("permission denied")
 
 
 store_employee_list_view = StoreEmployeeListView.as_view()
 
 
-class StoreEmployeeCreateView(CreateView):
+class StoreEmployeeCreateView(PermissionRequiredMixin, CreateView):
     model = StoreEmployee
     template_name = "stores/employee_create.html"
     form_class = StoreEmployeeCreateForm
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
+    permission_required = "stores.can_add_store_employee"
+    permission_denied_message = _("permission denied")
 
 
 store_employee_create_view = StoreEmployeeCreateView.as_view()
 
 
-class StoreEmployeeUpdateView(UpdateView):
+class StoreEmployeeUpdateView(PermissionRequiredMixin, UpdateView):
     model = StoreEmployee
     template_name = "stores/employee_update.html"
     form_class = StoreEmployeeUpdateForm
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
+    slug_field = "pk"
+    slug_url_kwarg = "pk"
+    permission_required = "stores.can_edit_store_employee"
+    permission_denied_message = _("permission denied")
 
 
 store_employee_update_view = StoreEmployeeUpdateView.as_view()
 
 
-class StoreEmployeeDeleteView(DeleteView):
+class StoreEmployeeDeleteView(PermissionRequiredMixin, DeleteView):
     model = StoreEmployee
     template_name = "stores/employee_delete.html"
     success_url = reverse_lazy("stores:employee-list")
     context_object_name = "store_employee"
+    slug_field = "pk"
+    slug_url_kwarg = "pk"
+    permission_required = "stores.can_delete_store_employee"
+    permission_denied_message = _("permission denied")
 
 
 store_employee_delete_view = StoreEmployeeDeleteView.as_view()
