@@ -1,54 +1,7 @@
-{% extends "base.html" %}
+{% extends "_base_table.html" %}
 
-{% block title %}
-    Auditoría de ERP
-{% endblock title %}
-{% block content %}
-    <h1>Auditoría</h1>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Acción</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Detalles</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for audit in audits %}
-                    <tr>
-                        <td>{{ audit.pk }}</td>
-                        <td>
-                            {% if audit.content_type %}
-                                {{ audit.content_type }}
-                            {% else %}
-                                <span>Sin tipo</span>
-                            {% endif %}
-                        </td>
-                        <td>
-                            {% if audit.action == 0 %}
-                                <span>Creado</span>
-                            {% elif audit.action == 1 %}
-                                <span>Actualizado</span>
-                            {% elif audit.action == 2 %}
-                                <span>Eliminado</span>
-                            {% elif audit.action == 3 %}
-                                <span>Acceso</span>
-                            {% endif %}
-                        </td>
-                        <td>{{ audit.timestamp }}</td>
-                        <td>
-                            {% if audit.pk %}
-                                <a href="{% url 'dashboards:audit-detail' audit.object_id %}">Ver</a>
-                            {% else %}
-                                <span>Sin detalles</span>
-                            {% endif %}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-{% endblock content %}
+{% load model_utils %}
+
+{% block table_block %}
+    {% include "components/auto_table.html" with detail_url_name='audits:detail' object_list=object_list fields=model|get_model_fields %}
+{% endblock table_block %}
