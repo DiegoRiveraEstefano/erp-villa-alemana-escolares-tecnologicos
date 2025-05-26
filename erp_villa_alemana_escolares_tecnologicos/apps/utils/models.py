@@ -6,6 +6,12 @@ class Person(models.Model):
     Model representing a person.
     """
 
+    rut = models.CharField(
+        max_length=13,
+        unique=True,
+        verbose_name="RUT",
+        help_text="The person's RUT (Rol Único Tributario).",
+    )
     first_name = models.CharField(
         max_length=255,
         verbose_name="First Name",
