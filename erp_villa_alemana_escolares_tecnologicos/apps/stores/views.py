@@ -45,7 +45,7 @@ class StoreCreateView(PermissionRequiredMixin, CreateView):
     model = Store
     template_name = "stores/store_create.html"
     form_class = StoreCreateForm
-    success_url = reverse_lazy("store:store-list")
+    success_url = reverse_lazy("stores:store-list")
     context_object_name = "store"
     permission_required = "stores.can_add_store"
     permission_denied_message = _("permission denied")
@@ -58,7 +58,7 @@ class StoreUpdateView(PermissionRequiredMixin, UpdateView):
     model = Store
     template_name = "stores/store_update.html"
     form_class = StoreUpdateForm
-    success_url = reverse_lazy("store:store-list")
+    success_url = reverse_lazy("stores:store-list")
     context_object_name = "store"
     slug_field = "slug"
     slug_url_kwarg = "store_slug"
@@ -72,7 +72,7 @@ store_update_view = StoreUpdateView.as_view()
 class StoreDeleteView(PermissionRequiredMixin, DeleteView):
     model = Store
     template_name = "stores/store_delete.html"
-    success_url = reverse_lazy("store:store-list")
+    success_url = reverse_lazy("stores:store-list")
     context_object_name = "store"
     slug_field = "slug"
     slug_url_kwarg = "store_slug"
