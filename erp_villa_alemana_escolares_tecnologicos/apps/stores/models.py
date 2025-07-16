@@ -96,6 +96,12 @@ class Store(models.Model):
 
         return reverse("stores:store-detail", kwargs={"store_slug": self.slug})
 
+    def get_employees(self) -> models.QuerySet["StoreEmployee"]:
+        """
+        Returns a queryset of employees assigned to this store.
+        """
+        return self.employees
+
 
 class StoreEmployee(models.Model):
     """

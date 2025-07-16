@@ -7,12 +7,7 @@
             "username": "admin1",
             "email": "admin1@empresa.com",
             "is_staff": true,
-            "is_active": true,
-            "date_joined": "2022-01-01T00:00:00Z",
-            "groups": [
-                "admin"
-            ],
-            "user_permissions": []
+            "is_active": true
         }
     },
     {

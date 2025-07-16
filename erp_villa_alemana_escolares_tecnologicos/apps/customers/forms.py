@@ -13,6 +13,8 @@ class CustomerCreateForm(forms.ModelForm):
             "email",
             "phone_number",
             "rut",
+            "customer_type",
+            "customer_class",
         )
 
 
@@ -25,6 +27,8 @@ class CustomerUpdateForm(forms.ModelForm):
             "email",
             "phone_number",
             "rut",
+            "customer_type",
+            "customer_class",
         )
 
 

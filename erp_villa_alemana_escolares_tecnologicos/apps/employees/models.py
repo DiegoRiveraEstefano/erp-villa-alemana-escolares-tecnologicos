@@ -68,6 +68,12 @@ class EmployeeDepartment(models.Model):
             kwargs={"department_slug": self.slug},
         )
 
+    def get_employees(self) -> models.QuerySet["Employee"]:
+        """
+        Returns a queryset of employees in this department.
+        """
+        return self.employees
+
 
 class EmployeePosition(models.Model):
     """
@@ -129,6 +135,12 @@ class EmployeePosition(models.Model):
             "employees:position-detail",
             kwargs={"position_slug": self.slug},
         )
+
+    def get_employees(self) -> models.QuerySet["Employee"]:
+        """
+        Returns a queryset of employees in this position.
+        """
+        return self.employees
 
 
 class Employee(Person):

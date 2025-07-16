@@ -11,6 +11,19 @@ class Customer(Person):
     Model representing a customer.
     """
 
+    CUSTOMER_TYPES = (
+        ("individual", _("Individual")),
+        ("company", _("Company")),
+        ("government", _("Government")),
+        ("non_profit", _("Non-Profit")),
+        ("other", _("Other")),
+    )
+
+    CUSTOMER_CLASS = (
+        ("retail", _("Retail")),
+        ("wholesale", _("Wholesale")),
+    )
+
     address = models.ForeignKey(
         "addresses.Address",
         on_delete=models.SET_NULL,
@@ -18,6 +31,22 @@ class Customer(Person):
         verbose_name=_("Customer Address"),
         help_text=_("The address of the customer."),
         null=True,
+    )
+
+    customer_type = models.CharField(
+        max_length=20,
+        choices=CUSTOMER_TYPES,
+        default="individual",
+        verbose_name=_("Customer Type"),
+        help_text=_("The type of customer (individual, company, etc.)."),
+    )
+
+    customer_class = models.CharField(
+        max_length=20,
+        choices=CUSTOMER_CLASS,
+        default="retail",
+        verbose_name=_("Customer Class"),
+        help_text=_("The class of customer (retail, wholesale, etc.)."),
     )
 
     class Meta:

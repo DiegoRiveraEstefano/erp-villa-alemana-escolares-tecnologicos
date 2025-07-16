@@ -66,6 +66,15 @@ class ProductCategory(models.Model):
             kwargs={"category_slug": self.slug},
         )
 
+    def get_products(self) -> models.QuerySet["Product"]:
+        """
+        Get all products in this category.
+
+        Returns:
+            QuerySet: Products in this category.
+        """
+        return self.products.all()
+
 
 class Product(models.Model):
     """

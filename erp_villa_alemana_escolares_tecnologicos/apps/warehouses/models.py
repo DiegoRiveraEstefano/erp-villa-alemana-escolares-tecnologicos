@@ -94,6 +94,12 @@ class Warehouse(models.Model):
             kwargs={"warehouse_slug": self.slug},
         )
 
+    def get_items(self) -> models.QuerySet["WarehouseInventory"]:
+        """
+        Returns the total quantity of items in the warehouse.
+        """
+        return self.inventories
+
 
 class WarehouseInventory(models.Model):
     """

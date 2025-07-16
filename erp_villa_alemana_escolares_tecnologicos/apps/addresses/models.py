@@ -1,7 +1,15 @@
 from auditlog.registry import auditlog
+from django.core.validators import RegexValidator
 from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
+
+from erp_villa_alemana_escolares_tecnologicos.apps.addresses.validators import (
+    FLOOR_REGEX,
+)
+from erp_villa_alemana_escolares_tecnologicos.apps.addresses.validators import (
+    POSTAL_CODE_REGEX,
+)
 
 
 class Region(models.Model):
@@ -80,6 +88,10 @@ class Region(models.Model):
 
     def get_absolute_url(self):
         return reverse("addresses:region-detail", kwargs={"pk": self.pk})
+
+    def get_provinces(self) -> models.QuerySet["Province"]:
+        """Returns all provinces associated with this region."""
+        return self.cities
 
 
 class Province(models.Model):
@@ -161,6 +173,10 @@ class Province(models.Model):
     def get_absolute_url(self):
         return reverse("addresses:city-detail", kwargs={"pk": self.pk})
 
+    def get_comunas(self) -> models.QuerySet["Comuna"]:
+        """Returns all comunas associated with this province."""
+        return self.comunas
+
 
 class Comuna(models.Model):
     """Comuna model.
@@ -240,6 +256,10 @@ class Comuna(models.Model):
     def get_absolute_url(self):
         return reverse("addresses:comuna-detail", kwargs={"pk": self.pk})
 
+    def get_addresses(self) -> models.QuerySet["Address"]:
+        """Returns all addresses associated with this comuna."""
+        return self.addresses
+
 
 class Address(models.Model):
     comuna = models.ForeignKey(
@@ -272,6 +292,12 @@ class Address(models.Model):
         blank=True,
         default="",
         help_text=_("Floor number"),
+        validators=[
+            RegexValidator(
+                regex=FLOOR_REGEX,
+                message=_("Floor must be a number between 1 and 99."),
+            ),
+        ],
     )
     description = models.TextField(
         _("Description"),
@@ -285,6 +311,12 @@ class Address(models.Model):
         blank=True,
         default="",
         help_text=_("The postal code of the address."),
+        validators=[
+            RegexValidator(
+                regex=POSTAL_CODE_REGEX,
+                message=_("Postal code must be between 4 and 10 digits."),
+            ),
+        ],
     )
 
     class Meta:
